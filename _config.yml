@@ -100,5 +100,6 @@ theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+## Currently using Github Actions for auto deployment
 deploy:
   type: ''
