@@ -27,9 +27,10 @@ jobs:
       - name: Deploy to FLwolfy.github.io
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GH_DEPLOY_TOKEN }}
+          deploy_key: ${{ secrets.GH_DEPLOY_TOKEN }}
+          external_repository: FLwolfy/FLwolfy.github.io
           publish_dir: ./public
-          repository: FLwolfy/FLwolfy.github.io
           publish_branch: main
+          keep_files: false
           user_name: Hsuan-Kai Liao
           user_email: hsuankailiao@gmail.com
