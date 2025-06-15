@@ -1,4 +1,4 @@
-name: Hexo Deploy
+name: Deploy Hexo to GitHub Pages
 
 on:
   push:
@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Blog source
         uses: actions/checkout@v3
 
-      - name: Setup Node.js (latest LTS)
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
@@ -21,12 +21,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Generate static files with Hexo
+      - name: Generate static files
         run: npx hexo generate
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to FLwolfy.github.io
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.GH_DEPLOY_TOKEN }}
           publish_dir: ./public
-          publish_branch: gh-pages
+          repository: FLwolfy/FLwolfy.github.io
+          publish_branch: main
+          user_name: Hsuan-Kai Liao
+          user_email: hsuankailiao@gmail.com
