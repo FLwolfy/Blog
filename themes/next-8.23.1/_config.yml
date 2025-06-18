@@ -124,7 +124,7 @@ sidebar:
   # Applicable to Muse | Mist and mobile of Pisces | Gemini.
   width_expanded: 320
   # Applicable to desktop of Pisces | Gemini.
-  width_dual_column: 240
+  width_dual_column: 200
 
   # Sidebar display.
   # Applicable to Muse | Mist and mobile of Pisces | Gemini.
@@ -160,7 +160,7 @@ social:
   GitHub: https://github.com/FLwolfy || fab fa-github
   E-Mail: mailto:hsuankailiao@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
-  Twitter: https://twitter.com/flwolfy || fab fa-twitter
+  Twitter: https://twitter.com/fl_wolfy || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
   #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
   #YouTube: https://youtube.com/yourname || fab fa-youtube
@@ -630,16 +630,16 @@ quicklink:
 motion:
   enable: true
   async: true
-  duration: 400
+  duration: 200
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
     menu_item: fadeInDown
-    post_block: fadeInUp
-    post_header: fadeIn
-    post_body: fadeIn
-    coll_header: fadeInLeft
+    post_block: fadeInDown
+    post_header: fadeInDown
+    post_body: fadeInDown
+    coll_header: fadeInDown
     # Only for Pisces | Gemini.
-    sidebar: fadeInLeftBig
+    sidebar: fadeInUpBig
 
 
 # Progress bar in the top during page loading.
@@ -760,12 +760,13 @@ isso: # <data_isso>
 addtoany:
   enable: true
   buttons:
-    - qq
-    - wechat
-    - twitter
-    - line
     - facebook
-    - instagram
+    - qzone
+    - wechat
+    - line
+    - x
+    - threads
+    - copy_link
 
 
 
