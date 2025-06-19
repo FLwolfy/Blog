@@ -311,11 +311,9 @@ post_navigation: right
 
 # TagCloud settings for tags page.
 tagcloud:
-  min: 10 # Minimum font size in px
-  max: 30 # Maximum font size in px
-  amount: 200 # Total amount of tags
-  orderby: name # Order of tags
-  order: 1 # Sort order
+  enable: true
+  min: 12 # Minimum font size in px
+  max: 40 # Maximum font size in px
 
 # Google Calendar
 # Share your recent schedule to others via calendar page.

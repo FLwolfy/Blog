@@ -2,15 +2,16 @@
   <div class="tag-cloud-title">
     {{ _p('counter.tag_cloud', site.tags.length) }}
   </div>
-  <div class="tag-cloud-tags">
+
+  <div id="tagcloud-raw" style="display:none;">
     {{ tagcloud({
-      min_font: theme.tagcloud.min,
-      max_font: theme.tagcloud.max,
-      amount  : theme.tagcloud.amount,
-      orderby : theme.tagcloud.orderby,
-      order   : theme.tagcloud.order,
-      class   : 'tag-cloud'
-      })
-    }}
+      min: theme.tagcloud.min,
+      max: theme.tagcloud.max,
+      class: 'tag-cloud'
+    }) }}
+  </div>
+
+  <div id="tagcloud-canvas-container" style="width: 100%; max-width: 700px; margin: 0 auto;">
+    <canvas id="tagcanvas" style="width: 100%; height: auto; display: block;"></canvas>
   </div>
 </div>

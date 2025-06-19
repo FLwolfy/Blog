@@ -1,4 +1,4 @@
 ---
-title: categories
-date: 2025-06-18 15:38:12
+title: 文章分类
+type: "categories"
 ---
