@@ -27,9 +27,9 @@ custom_file_path:
   #postBodyEnd: source/_data/post-body-end.njk
   #footer: source/_data/footer.njk
   #bodyEnd: source/_data/body-end.njk
-  #variable: source/_data/variables.styl
+  variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
-  #style: source/_data/styles.styl
+  style: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -37,7 +37,7 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Gemini
+scheme: Pisces
 #scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
@@ -58,7 +58,7 @@ favicon:
   #android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
-custom_logo: #/images/icon.png
+custom_logo: /images/icon.png
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/about/cclicenses/
@@ -352,7 +352,7 @@ mobile_layout_economy: true
 # Browser header panel color.
 theme_color:
   light: "#3c2f4f"
-  dark:  "#2a2139"
+  dark:  "rgba(240, 87, 232, 0.45)"
 
 # Override browsers' default behavior.
 body_scrollbar:
@@ -630,17 +630,18 @@ quicklink:
 motion:
   enable: true
   async: true
-  duration: 200
+  duration: 100
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
+    column: fadeInLeft
+    site_logo: zoomIn
     menu_item: fadeInDown
-    post_block: fadeInDown
-    post_header: fadeInDown
-    post_body: fadeInDown
-    coll_header: fadeInDown
+    post_block: fadeInRight
+    post_header: fadeInRight
+    post_body: fadeInRight
+    coll_header: fadeInRight
     # Only for Pisces | Gemini.
-    sidebar: fadeInUpBig
-
+    sidebar: fadeInDown
 
 # Progress bar in the top during page loading.
 # For more information: https://github.com/CodeByZach/pace
@@ -658,8 +659,8 @@ pace:
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
   enable: true
-  size: 200 # The width of the ribbon
-  alpha: 0.2 # The transparency of the ribbon
+  size: 150 # The width of the ribbon
+  alpha: 0.05 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
 
 
