@@ -1,13 +1,27 @@
 <div class="tag-cloud">
-  <div class="tag-cloud-title">
-    {{ _p('counter.tag_cloud', site.tags.length) }}
+  {# 
+    <div class="tag-cloud-title">
+      {{ _p('counter.tag_cloud', site.tags.length) }}
+    </div>
+  #}
+
+  <div class="tag-cloud-tags">
+    {{ tagcloud({
+      min_font: theme.tagcloud.min,
+      max_font: theme.tagcloud.max,
+      amount  : theme.tagcloud.amount,
+      orderby : theme.tagcloud.orderby,
+      order   : theme.tagcloud.order,
+      class   : 'tag-cloud'
+      })
+    }}
   </div>
 
-  <div id="tagcloud-raw" style="display:none;">
+  <div id="tag-cloud-tags-3D" style="display:none;">
     {{ tagcloud({
-      min: theme.tagcloud.min,
-      max: theme.tagcloud.max,
-      class: 'tag-cloud'
+      min_font: theme.tagcloud.min,
+      max_font: theme.tagcloud.max,
+      class: 'tag-cloud-3D'
     }) }}
   </div>
 

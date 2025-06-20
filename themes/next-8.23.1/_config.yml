@@ -58,7 +58,7 @@ favicon:
   #android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
-custom_logo: /images/icon.png
+custom_logo: #/images/icon.png
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/about/cclicenses/
@@ -311,9 +311,11 @@ post_navigation: right
 
 # TagCloud settings for tags page.
 tagcloud:
-  enable: true
-  min: 12 # Minimum font size in px
-  max: 40 # Maximum font size in px
+  min: 30 # Minimum font size in px
+  max: 60 # Maximum font size in px
+  amount: 200 # Total amount of tags
+  orderby: name # Order of tags
+  order: 1 # Sort order
 
 # Google Calendar
 # Share your recent schedule to others via calendar page.
@@ -349,8 +351,8 @@ mobile_layout_economy: true
 
 # Browser header panel color.
 theme_color:
-  light: "#3c2f4f"
-  dark:  "rgba(240, 87, 232, 0.45)"
+  light: "rgba(255, 173, 96, 0.45)"
+  dark:  "rgba(255, 173, 96, 0.45)"
 
 # Override browsers' default behavior.
 body_scrollbar:
@@ -400,7 +402,7 @@ reading_progress:
 
 # Bookmark Support
 bookmark:
-  enable: true
+  enable: false
   # Customize the color of the bookmark.
   color: "#1b1f3b"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
