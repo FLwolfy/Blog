@@ -9,7 +9,7 @@ description: 欢迎来到 FLwolfy 的博客，这里分享编程、游戏和生�
 date: 2025-06-21
 ---
 
-<section class="home-welcome" style="text-align: center; padding: 60px 20px;">
+<section class="home-welcome" style="text-align: center; padding: 30px 20px;">
   <h1 style="font-size: 3.2rem; font-weight: 900; color: #5FE9CB; margin-bottom: 0.3em;">
     欢迎来到 FLwolfy 的博客
   </h1>
