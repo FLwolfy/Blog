@@ -7,20 +7,9 @@
 
 {% block content %}
 
-  {% set home_post = false %}
-  {% for p in page.posts.toArray() %}
-    {% if p.home and not home_post %}
-      {% set home_post = p %}
-    {% endif %}
-  {% endfor %}
-
-  {% if home_post %}
-    <section>
-      <article>
-        {{ home_post.content }}
-      </article>
-    </section>
-  {% endif %}
+  {%- for post in site.posts.toArray() %}
+    {{ partial('_macro/post.njk', {post: post, is_index: true}) }}
+  {%- endfor %}
 
   {%- include '_partials/pagination.njk' -%}
 
