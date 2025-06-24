@@ -157,3 +157,47 @@
     });
   }
 </script>
+
+{# 动态背景线条动画 #}
+<script type="text/javascript"
+        color="255,255,255"
+        opacity="0.9"
+        zIndex="-2"
+        count="200"
+        src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const canvas = document.querySelector('body > canvas');
+    if (!canvas) return;
+    document.addEventListener('mousemove', function (e) {
+      window.mouse = {
+        x: e.clientX,
+        y: e.clientY
+      };
+    });
+    document.addEventListener('mouseleave', function () {
+      window.mouse = null;
+    });
+  });
+</script>
+<style>
+  canvas.canvas-nest-canvas {
+    filter:
+      drop-shadow(0 0 8px rgba(255,255,255,0.9))
+      drop-shadow(0 0 12px rgba(255,255,255,0.6))
+      drop-shadow(0 0 20px rgba(255,255,255,0.4));
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    pointer-events: none;
+    z-index: -2;
+  }
+</style>
+
+{# 点击烟花特效 #}
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script type="text/javascript" src="/js/fireworks.js"></script>
+

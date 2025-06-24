@@ -20,7 +20,13 @@
       <i class="logo-line"></i>
     </a>
     {%- if subtitle %}
-      <p class="site-subtitle" itemprop="description">{{ subtitle }}</p>
+      <p class="site-subtitle" itemprop="description">
+        <span id="binft"></span>
+        <script src="{{ url_for('/js/binft.js') }}"></script>
+        <script>
+          binft(document.getElementById('binft'), {{ subtitle | dump | safe }});
+        </script>
+      </p>
     {%- endif %}
     {%- if theme.custom_logo and (theme.scheme === 'Gemini' or theme.scheme === 'Pisces') %}
       <img class="custom-logo-image" src="{{ url_for(theme.custom_logo) }}" alt="{{ title }}">
