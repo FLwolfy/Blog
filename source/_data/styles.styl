@@ -23,21 +23,48 @@ body::before
 .headband
   display: none !important
 
-// 标题点击抖动
-.site-title:hover, .post-title:hover {
-    animation: shake-it .5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+// 链接悬停放大抖动
+a {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+a:hover {
+  transform: scale(1.05);  /* 放大 */
+  animation: shake-it 0.5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);  /* 抖动 */
 }
 @keyframes shake-it {
-    0% {
-        text-shadow: 0 0 rgba(0, 255, 255, .5), 0 0 rgba(255, 0, 0, .5);
-    }
-    25% {
-        text-shadow: -2px 0 rgba(0, 255, 255, .5), 2px 0 rgba(255, 0, 0, .5);
-    }
-    50% {
-        text-shadow: -5px 0 rgba(0, 255, 255, .5), 3px 0 rgba(255, 0, 0, .5);
-    }
-    100% {
-        text-shadow: 3px 0 rgba(0, 255, 255, .5), 5px 0 rgba(255, 0, 0, .5);
-    }
+  0% {
+    text-shadow: 0 0 rgba(0, 255, 255, 0.5), 0 0 rgba(255, 0, 0, 0.5);
+  }
+  25% {
+    text-shadow: -2px 0 rgba(0, 255, 255, 0.5), 2px 0 rgba(255, 0, 0, 0.5);
+  }
+  50% {
+    text-shadow: -5px 0 rgba(0, 255, 255, 0.5), 3px 0 rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    text-shadow: 3px 0 rgba(0, 255, 255, 0.5), 5px 0 rgba(255, 0, 0, 0.5);
+  }
 }
+
+// 半透明效果
+.main-inner
+  backdrop-filter: blur(12px)                // 模糊毛玻璃效果
+  -webkit-backdrop-filter: blur(12px)        // Safari 支持
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25)
+.site-brand-container
+  backdrop-filter: blur(12px)
+  -webkit-backdrop-filter: blur(12px)
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25)
+.main-menu
+  backdrop-filter: blur(12px)
+  -webkit-backdrop-filter: blur(12px)
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25)
+.sidebar-inner
+  backdrop-filter: blur(12px)
+  -webkit-backdrop-filter: blur(12px)
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25)
+.search-result-container
+  backdrop-filter: blur(6px)
+  -webkit-backdrop-filter: blur(6px)
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25)
