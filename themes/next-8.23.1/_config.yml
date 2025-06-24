@@ -360,7 +360,7 @@ body_scrollbar:
   # Place the scrollbar over the content.
   overlay: false
   # Reserving space for the scrollbar gutter even if the content is not overflowing.
-  stable: false
+  stable: true
 
 codeblock:
   # Code Highlight theme
