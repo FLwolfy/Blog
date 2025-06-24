@@ -1,3 +1,107 @@
+/* 标题部分 */
+.enhanced-title {
+  font-size: 30px; 
+  font-weight: bold;
+  margin: 24px 0 16px;       
+  padding: 0px 16px;        
+  border-bottom: 2px solid var(--brand-color); /* 建议用 CSS 变量替代 SASS 变量 */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--brand-color);
+  border-radius: 6px;
+  background-color: rgba(255, 105, 180, 0.05); /* 示例色，可用 brand-color 淡化 */
+}
+
+.enhanced-title i {
+  font-size: 18px; /* 原来 1.2em */
+  color: inherit;
+}
+
+
+// 分类容器
+.category-collage {
+  background rgba(255, 0, 0, 0.1)  // 半透明橘色背景
+  border-radius 12px
+}
+
+.category-collage-categories {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 12px 10px;
+  margin: 0 auto;
+  scrollbar-width: thin;
+  scrollbar-color: #bbb transparent;
+  justify-content: center;
+}
+
+/* 滚动条样式 */
+.category-collage-categories::-webkit-scrollbar {
+  height: 6px;
+}
+.category-collage-categories::-webkit-scrollbar-track {
+  background: transparent;
+}
+.category-collage-categories::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 3px;
+}
+
+/* 卡片本体 */
+.category-collage-card {
+  background: transparent;
+  position: relative;
+  flex: 0 0 auto;
+  width: 250px;
+  margin: 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+  box-shadow: none; /* 确保没有底部阴影 */
+  border: none;     /* 确保没有底线 */
+}
+
+.category-collage-card img {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px 8px 0 0;
+  display: block;
+  flex-shrink: 0;
+  transition: transform 1.5s ease;
+}
+
+.category-collage-card:hover img {
+  transform: scale(1.1);
+}
+
+.category-name {
+  background-color: rgba(0, 0, 0, 0.3); /* 半透明背景让文字更清晰 */
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  margin: 0;
+  padding: 4px 8px;
+  font-weight: 900;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  max-width: 90%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+
+// 标签部分
 .tag-cloud
   text-align center
 
@@ -7,8 +111,7 @@
     display inline-block
     margin 10px
 
-  background rgba(255, 0, 195, 0.1)  // 半透明橘色背景
-  padding 20px
+  background rgba(255, 0, 195, 0.1)
   border-radius 12px
 
 for $tag-cloud in (0 .. 10)

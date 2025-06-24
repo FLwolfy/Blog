@@ -1,10 +1,31 @@
-<div class="tag-cloud">
-  {# 
-    <div class="tag-cloud-title">
-      {{ _p('counter.tag_cloud', site.tags.length) }}
-    </div>
-  #}
 
+{# 分类卡片展示区，带图片与名称 #}
+<div class="category-collage">
+  {# 分类部分标题 #}
+  <div class="category-all-title enhanced-title">
+    <i class="fas fa-th"></i> 
+    {{ _p('counter.categories', site.categories.length) }}
+  </div>
+  
+  <div class="category-collage-categories">
+    {%- for category in site.categories.toArray() %}
+      <a href="{{ url_for(category.path) }}" class="category-collage-card" title="{{ category.name }}">
+        <img src="{{ url_for('/images/core/' + category.name + '.jpg') }}" alt="{{ category.name }}">
+        <div class="category-name">{{ category.name }}</div>
+      </a>
+    {%- endfor %}
+  </div>
+</div>
+
+{# 标签云展示区域，包括 2D 和隐藏的 3D 支持 #}
+<div class="tag-cloud">
+  {# 标签云部分标题 #}
+  <div class="tag-cloud-title enhanced-title">
+    <i class="fas fa-tags"></i> 
+    {{ _p('counter.tag_cloud', site.tags.length) }}
+  </div>
+  
+  {# 2D 标签云：根据标签数量决定字体大小 #}
   <div class="tag-cloud-tags">
     {{ tagcloud({
       min_font: theme.tagcloud.min,
@@ -17,6 +38,7 @@
     }}
   </div>
 
+  {# 隐藏的 3D 标签云，配合 canvas 使用 #}
   <div id="tag-cloud-tags-3D" style="display:none;">
     {{ tagcloud({
       min_font: theme.tagcloud.min,
@@ -25,6 +47,7 @@
     }) }}
   </div>
 
+  {# 标签云 Canvas 容器 #}
   <div id="tagcloud-canvas-container" style="width: 100%; max-width: 700px; margin: 0 auto;">
     <canvas id="tagcanvas" style="width: 100%; height: auto; display: block;"></canvas>
   </div>

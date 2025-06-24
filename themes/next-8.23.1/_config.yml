@@ -98,8 +98,8 @@ open_graph:
 menu:
   home: / || fa fa-home
   articles: /articles/ || fa fa-file-alt
-  tags: /tags/ || fa fa-tags
-  categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-folder-open
+  #categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   #about: /about/ || fa fa-user
   #schedule: /schedule/ || fa fa-calendar
@@ -125,7 +125,7 @@ sidebar:
   # Applicable to Muse | Mist and mobile of Pisces | Gemini.
   width_expanded: 320
   # Applicable to desktop of Pisces | Gemini.
-  width_dual_column: 200
+  width_dual_column: 210
 
   # Sidebar display.
   # Applicable to Muse | Mist and mobile of Pisces | Gemini.
@@ -312,8 +312,8 @@ post_navigation: right
 
 # TagCloud settings for tags page.
 tagcloud:
-  min: 30 # Minimum font size in px
-  max: 60 # Maximum font size in px
+  min: 20 # Minimum font size in px
+  max: 45 # Maximum font size in px
   amount: 200 # Total amount of tags
   orderby: name # Order of tags
   order: 1 # Sort order
