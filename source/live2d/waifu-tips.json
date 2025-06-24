@@ -102,8 +102,11 @@
 		"selector": ".container a[href^='http'], .nav-link .nav-text",
 		"text": ["要去看看 <span>{text}</span> 么？", "去 <span>{text}</span> 逛逛吧。", "到 <span>{text}</span> 看看吧。"]
 	}, {
-		"selector": ".back-to-top",
+		"selector": ".back-to-top-on",
 		"text": ["点它就可以回到顶部啦！", "又回到最初的起点～", "要回到开始的地方么？"]
+	}, {
+		"selector": ".book-mark-link",
+		"text": ["点它就可以保存阅读进度啦", "放个书签呗～", "要去打魔女啦？记得记录一下进度哦！"]
 	}, {
 		"selector": ".reward-container",
 		"text": ["我是不是棒棒哒～快给我点赞吧！", "要打赏我嘛？好期待啊～", "主人最近在吃土呢，很辛苦的样子，给他一些钱钱吧～"]
