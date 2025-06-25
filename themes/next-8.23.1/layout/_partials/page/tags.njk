@@ -15,9 +15,28 @@
       </a>
     {%- endfor %}
   </div>
+
+  {# 宽度自适应 #}
+  <script>
+    function updateCategoryJustify() {
+      const container = document.querySelector('.category-collage-categories');
+      if (!container) return;
+      if (container.scrollWidth <= container.clientWidth) {
+        container.style.justifyContent = 'center';
+      } else {
+        container.style.justifyContent = 'flex-start';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateCategoryJustify();
+      window.addEventListener('resize', updateCategoryJustify);
+    });
+  </script>
+
 </div>
 
-{# 标签云展示区域，包括 2D 和隐藏的 3D 支持 #}
+{# 标签云展示区域，包括 2D 和 3D 支持 #}
 <div class="tag-cloud">
   {# 标签云部分标题 #}
   <div class="tag-cloud-title enhanced-title">
