@@ -63,6 +63,9 @@
 		"selector": ".feed-link a",
 		"text": ["这里可以使用 RSS 订阅呢！", "利用 feed 订阅器，就能快速知道博客有没有更新了呢。"]
 	}, {
+		"selector": ".time-widget",
+		"text": ["要来看看时间吗～", "现在几点啦？", "文章看了多久啦？记得休息眼睛哦～"]
+	}, {
 		"selector": ".cc-opacity, .post-copyright-author",
 		"text": ["要记得规范转载哦。", "所有文章均采用 CC BY-NC-SA 4.0 许可协议～", "转载前要先注意下文章的版权协议呢。"]
 	}, {
