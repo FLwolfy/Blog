@@ -45,6 +45,8 @@
   });
 
   function toggleStates(collapse) {
+    collapsed = collapse; // 更新状态
+
     // 控制 main-inner
     const mainInner = document.querySelector('.main-inner');
     if (mainInner) {
@@ -53,9 +55,29 @@
       mainInner.style.pointerEvents = collapse ? 'none' : 'auto';
     }
 
-    // TODO: 控制 clock-container 平移并显示当前时间
+    // 控制 clock-container 平移
     const clockContainer = document.querySelector('.clock-container');
-    
+    if (clockContainer) {
+      clockContainer.style.transition = 'right 0.5s ease';
+      clockContainer.style.right = collapse ? '10%' : '-30%';
+      clockContainer.style.zIndex = collapse ? '0' : '-2';
+    }
+
+    // 控制时间显示
+    const overlay = document.getElementById('clock-time-overlay');
+    if (!overlay) return;
+
+    if (collapse) {
+      const now = new Date();
+      const hh = String(now.getHours()).padStart(2, '0');
+      const mm = String(now.getMinutes()).padStart(2, '0');
+      overlay.textContent = `${hh}:${mm}`;
+      overlay.classList.add('show');
+    } else {
+      overlay.classList.remove('show');
+    }
   }
+
+
 </script>
 

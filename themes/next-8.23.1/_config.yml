@@ -406,7 +406,7 @@ reading_progress:
 bookmark:
   enable: true
   # Customize the color of the bookmark.
-  color: "rgba(255, 173, 96, 0.45)"
+  color: "rgba(96, 231, 255, 0.7)"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
   # If manual, only save it by clicking the bookmark-icon.
   save: manual
@@ -645,6 +645,10 @@ motion:
     coll_header: fadeInRight
     # Only for Pisces | Gemini.
     #sidebar: fadeInDown
+
+    # Clock only has animation from right to left.
+    # enabled / disabled
+    clock: enabled
 
 # Progress bar in the top during page loading.
 # For more information: https://github.com/CodeByZach/pace
