@@ -1,12 +1,12 @@
 
-{# 分类卡片展示区，带图片与名称 #}
-<div class="category-collage">
+<div class="cats-tags-container">
   {# 分类部分标题 #}
   <div class="category-all-title enhanced-title">
     <i class="fas fa-th"></i> 
     {{ _p('counter.categories', site.categories.length) }}
   </div>
   
+  {# 分类展示 #}
   <div class="category-collage-categories">
     {%- for category in site.categories.toArray() %}
       <a href="{{ url_for(category.path) }}" class="category-collage-card" title="{{ category.name }}">
@@ -34,10 +34,6 @@
     });
   </script>
 
-</div>
-
-{# 标签云展示区域，包括 2D 和 3D 支持 #}
-<div class="tag-cloud">
   {# 标签云部分标题 #}
   <div class="tag-cloud-title enhanced-title">
     <i class="fas fa-tags"></i> 

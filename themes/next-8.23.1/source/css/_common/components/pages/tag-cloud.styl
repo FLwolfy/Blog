@@ -1,8 +1,7 @@
-/* 标题部分 */
+// 整体部分
 .enhanced-title {
   font-size: 30px; 
   font-weight: bold;
-  margin: 24px 0 16px;       
   padding: 0px 16px;        
   border-bottom: 2px solid var(--brand-color);
   display: flex;
@@ -10,7 +9,9 @@
   gap: 8px;
   color: var(--brand-color);
   border-radius: 6px;
-  background-color: rgba(255, 105, 180, 0.05);
+  background-color: $color-tagcloud-container-custom;
+  backdrop-filter: blur(6px)
+  -webkit-backdrop-filter: blur(6px)
 }
 
 .enhanced-title i {
@@ -18,13 +19,18 @@
   color: inherit;
 }
 
+.cats-tags-container
+  text-align center
+  
+  a
+    font-weight bold
+    display inline-block
+    margin 10px
+
+  background $color-tagcloud-container-custom
+  border-radius 12px
 
 // 分类容器
-.category-collage {
-  background rgba(255, 0, 0, 0.1)
-  border-radius 12px
-}
-
 .category-collage-categories {
   display: flex;
   gap: 16px;
@@ -100,20 +106,7 @@
   z-index: 2;
 }
 
-
 // 标签部分
-.tag-cloud
-  text-align center
-
-  // 你的原有 a 样式
-  a
-    font-weight bold
-    display inline-block
-    margin 10px
-
-  background rgba(255, 0, 195, 0.1)
-  border-radius 12px
-
 for $tag-cloud in (0 .. 10)
   $tag-cloud-color = mix($tag-cloud-end, $tag-cloud-start, $tag-cloud * 10)
   .tag-cloud-{$tag-cloud}
