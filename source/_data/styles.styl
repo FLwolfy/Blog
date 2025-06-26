@@ -5,6 +5,12 @@
   font-weight: bold;
 }
 
+// 全局字体
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap')
+html, body, * {
+  font-family: 'Noto Sans SC', 'Noto Sans', 'Microsoft YaHei', sans-serif;
+}
+
 // 页面背景图片
 body
   background: url(/images/core/bg.jpg) no-repeat center center fixed
@@ -167,7 +173,9 @@ a:hover {
   }
 
   h3::before {
-    content: "❮ "
+    content: "❮";
+    margin-right: 5px;
+    border-bottom: 1px solid $color-markdown-title-decoration-custom;
   }
 
   h1, h2, h3, h4, h5, h6 {

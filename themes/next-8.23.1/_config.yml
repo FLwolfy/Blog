@@ -21,7 +21,7 @@ minify: false
 custom_file_path:
   #head: source/_data/head.njk
   #header: source/_data/header.njk
-  #sidebar: source/_data/sidebar.njk
+  sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
   #postBodyStart: source/_data/post-body-start.njk
   #postBodyEnd: source/_data/post-body-end.njk
@@ -430,10 +430,11 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  # 注意，默认字体已经在个性化设置 source/_data/styles.styl 进行全局设置
+  enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
-  host:
+  host: https://fonts.googleapis.com
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -443,7 +444,7 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Lato
+    family:
     size:
 
   # Font settings for site title (.site-title).
@@ -455,7 +456,7 @@ font:
   # Font settings for headlines (<h1> to <h6>).
   headings:
     external: true
-    family:
+    family: 'Noto Serif SC'
     size:
 
   # Font settings for posts (.post-body).
@@ -466,7 +467,7 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: 'JetBrains Mono'
 
 
 # ---------------------------------------------------------------
