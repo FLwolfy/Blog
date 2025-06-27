@@ -13,21 +13,23 @@ html, body, * {
 
 // 页面背景图片
 body
-  background: $color-body-background url(/images/core/background.jpg) no-repeat center center fixed
-  background-size: cover
   position: relative
+  background-color: $color-body-background 
+  background: url(/images/core/background.jpg) no-repeat center center fixed
+  background-size: cover
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif
 
-// 图片遮罩
 body::before
   content: ''
   position: fixed
+  display: block
   top: 0
   left: 0
   width: 100%
   height: 100%
   background: $color-overlay-custom
   z-index: -5
+  pointer-events: none
 
 // 去除头梁
 .headband
