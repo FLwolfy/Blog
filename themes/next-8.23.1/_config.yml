@@ -646,7 +646,7 @@ motion:
     # Only for Pisces | Gemini.
     #sidebar: fadeInDown
 
-    # Clock only has animation from right to left.
+    # Clock only has animation fade in.
     # enabled / disabled
     clock: enabled
 
