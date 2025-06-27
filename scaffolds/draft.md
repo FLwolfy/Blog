@@ -1,4 +1,15 @@
 ---
 title: {{ title }}
+description: 简述
+
+categories:
+  - 其他
 tags:
+  - 其他
+
+home: false
+toc_enable: true
+style_enable: false
+
+date: {{ date | date('YYYY-MM-DD') }}
 ---

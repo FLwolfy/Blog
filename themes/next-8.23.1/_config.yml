@@ -51,8 +51,8 @@ darkmode: true
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/core/favicon.png
-  medium: /images/core/favicon.png
+  small: /images/core/favicon.ico
+  medium: /images/core/favicon.ico
   apple_touch_icon: /images/core/icon.png
   safari_pinned_tab: /images/core/icon.png
   #android_manifest: /manifest.json

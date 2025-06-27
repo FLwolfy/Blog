@@ -13,10 +13,9 @@ html, body, * {
 
 // 页面背景图片
 body
-  background: url(/images/core/bg.jpg) no-repeat center center fixed
+  background: $color-body-background url(/images/core/background.jpg) no-repeat center center fixed
   background-size: cover
   position: relative
-  color: $color-body-text-custom
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif
 
 // 图片遮罩
@@ -120,7 +119,7 @@ a:hover {
   border-radius: 0 0 12px 12px
 
 // 文章样式
-.post-body {
+.post-body:not(.no-style) {
   // 标题样式
   h1 {
     color: $color-markdown-title-text-custom;
