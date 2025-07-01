@@ -3,9 +3,9 @@
 	"FileReferences": {
 		"Moc": "model.moc3",
 		"Textures": [
-			"model.1024/texture_00.png",
-			"model.1024/texture_01.png",
-			"model.1024/texture_02.png"
+			"model.1024/texture_00.webp",
+			"model.1024/texture_01.webp",
+			"model.1024/texture_02.webp"
 		],
 		"Physics": "model.physics3.json",
 		"Pose": "model.pose3.json",
