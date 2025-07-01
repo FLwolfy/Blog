@@ -44,65 +44,25 @@
 			}
 		],
 		"Motions": {
-			"Motion": [
+			"Idle": [
 				{
-					"File": "mtn/motion_000.motion3.json",
-					"Name": "motion_000"
+					"File": "mtn/motion_000.motion3.json"
 				},
 				{
-					"File": "mtn/motion_001.motion3.json",
-					"Name": "motion_001"
+					"File": "mtn/motion_001.motion3.json"
 				},
 				{
-					"File": "mtn/motion_100.motion3.json",
-					"Name": "motion_100"
-				},
-				{
-					"File": "mtn/motion_200.motion3.json",
-					"Name": "motion_200"
-				},
-				{
-					"File": "mtn/motion_300.motion3.json",
-					"Name": "motion_300"
-				},
-				{
-					"File": "mtn/motion_400.motion3.json",
-					"Name": "motion_400"
-				}
-			],
-			"Motion#2": [
-				{
-					"Name": "0",
-					"File": "mtn/motion_000.motion3.json",
-					"FileLoop": true,
-					"Command": "eye_blink enforce",
-					"FadeOut": 0
-				},
-				{
-					"Name": "300",
-					"Command": "eye_blink enforce",
-					"File": "mtn/motion_300.motion3.json"
-				},
-				{
-					"Name": "200",
-					"Command": "eye_blink enforce",
-					"File": "mtn/motion_200.motion3.json"
-				},
-				{
-					"Name": "1",
-					"File": "mtn/motion_001.motion3.json",
-					"FileLoop": true,
-					"Command": "eye_blink enforce",
-					"FadeOut": 0
-				},
-				{
-					"Name": "100",
-					"Command": "eye_blink enforce",
 					"File": "mtn/motion_100.motion3.json"
 				},
 				{
-					"Name": "400",
-					"Command": "eye_blink enforce",
+					"File": "mtn/motion_300.motion3.json"
+				}
+			],
+			"TapBody": [
+				{
+					"File": "mtn/motion_200.motion3.json"
+				},
+				{
 					"File": "mtn/motion_400.motion3.json"
 				}
 			]
