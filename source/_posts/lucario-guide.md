@@ -31,9 +31,6 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
   <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioJab3.gif" alt="Lucario Jab 3" height="150px">
 </div>
 
-
----
-
 #### 冲刺攻击 | DA
 
 路卡利欧的 DA 动作是向前铲踢，有着不错的 `7帧` 启动帧数，是一个不错的追击突进距离和，因此可以在许多场合作为突进爆发技使用，用于打断节奏抑或是连招终结都是不错的选择。但是，DA 的动作结束后硬直较长，无法快速跟进，没有后续连招。若不安全打点（不穿盾）被盾住容易遭到却反，因此不能频繁滥用。
@@ -43,8 +40,6 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 <div class="img-row">
   <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioDashAttack.gif" alt="Lucario Dash Attack" height="150px">
 </div>
-
----
 
 #### 横强攻击 | 横T
 
@@ -56,8 +51,6 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
   <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioFTilt.gif" alt="Lucario Forward Tilt" height="150px">
 </div>
 
----
-
 #### 上强攻击 | 上T
 
 路卡利欧的上T是一个从身后到身前的全身踢，身后判定早，只有 `6帧` 启动前摇，是个优秀的对空技能，特别适合拦截一些需要跳切入的角色。上T本身也能与空前和空上形成连招，所以适合用来作为连招起手和读受身。
@@ -67,8 +60,6 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 <div class="img-row">
   <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioUTilt.gif" alt="Lucario Up Tilt" height="150px">
 </div>
-
----
 
 #### 下强攻击 | 下T
 
@@ -80,8 +71,6 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
   <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioDTilt.gif" alt="Lucario Down Tilt" height="150px">
 </div>
 
----
-
 #### 横猛击 | 横S
 
 路卡利欧的横S会使得自己先后仰再向前猛击，有时候这个后仰会躲过一些短抓或是近距离招。横S是其主要的击杀手段之一。横S启动为 `19帧` ，在高波导状态下打盾为 `-19帧` 且具备明显**推盾**效果，即使在防御状态下也难以反击，相对安全。
@@ -91,8 +80,6 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 <div class="img-row">
   <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioFSmash.gif" alt="Lucario Forward Smash" height="150px">
 </div>
-
----
 
 #### 上猛击 | 上S
 
@@ -105,8 +92,6 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 <div class="img-row">
   <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioUSmash.gif" alt="Lucario Up Smash" height="150px">
 </div>
-
----
 
 #### 下猛击 | 下S
 
@@ -136,8 +121,6 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
   <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioNAir.gif" alt="Lucario Neutral Air" height="150px">
 </div>
 
----
-
 #### 空中前攻击 | 空前
 
 路卡利欧的空前是向前踢一段，这招是路卡发动第二快的空招，只要 `7帧` 发动，可以用来抢招。由于发动块，空前可以作为连招起手和抓跳。空前的后摇较小，可以作为被击飞时候的快速恢复。
@@ -150,8 +133,6 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
   <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioFAir.gif" alt="Lucario Forward Air" height="150px">
 </div>
 
----
-
 #### 空中后攻击 | 空后
 
 路卡利欧的空后俗称“空中横S”，由此可见其力道之大。空后是路卡利欧发动最慢的空招，需要 `13帧` ，但碍于他的力道之恐怖，多数人不敢贸然惩罚或抓前摇。空后是路卡利欧的主要击杀手段之一，又帅又强，在高波导情况下，空后有轻微**推盾**，且对盾 `-7帧` ，所以动量拉的好的话摸盾相对安全。在波导足够之后，可以尝试进行空后读跳抑或是跳到背身进行空后的确认击杀。
@@ -161,8 +142,6 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 <div class="img-row">
   <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioBAir.gif" alt="Lucario Back Air" height="150px">
 </div>
-
----
 
 #### 空中上攻击 | 空上
 
@@ -175,8 +154,6 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 <div class="img-row">
   <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioUAir.gif" alt="Lucario Up Air" height="150px">
 </div>
-
----
 
 #### 空中下攻击 | 空下
 
