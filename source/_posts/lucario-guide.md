@@ -17,6 +17,8 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 
 ## 招式技能与帧数 | Moves
 
+路卡利欧在打乱斗5代并不算是优秀角色，人人都有早期击杀的时代让路卡利欧非常难以保留高波导并生存。不过路卡利欧还是有一些帧数相对优秀的的招式，并且由于波导的机制，大部分对手不敢让路卡利欧获得高波导，这导致对手在跟路卡利欧立回时总是容易凹或急从而露出破绽。路卡利欧玩家要做的是熟悉各种安全招和帧数，并以最大化收益来翻盘。
+
 ### 地面招式 | Grounds
 
 路卡利欧的地面招式在整个大乱斗环境中不算优秀，特别是在 DLC 出了之后（万恶的DLC）。所以路卡利欧的地面招式用起来需要谨慎。由于路卡利欧在地面具有优秀的移速，同对手立回并用地面招接近是不错的进攻手段。同时不少地面招式都是良好的连招起手，可以在立回阶段尝试摸起手。
@@ -215,6 +217,39 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
   <img src="https://ssb.wiki.gallery/images/thumb/5/54/Lucario_Up_B_SSBU.gif/300px-Lucario_Up_B_SSBU.gif" alt="Lucario Extreme Speed" style="height:min(10rem, 20vw);">
   <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioExtremeSpeedA.gif" alt="Lucario Extreme Speed (Hit)" style="height:min(10rem, 20vw);">
 </div>
+
+#### 影子分身 | 下B
+
+路卡利欧的下B是**当身**。此当身全身覆盖，只需要 `5帧` 发动，持续 `19帧` 至第 `24帧` ，并在第 `4帧` 带有**无形帧**，总体是个相对优秀的当身技能，可以用作逃脱对手伪连的手段之一。需要注意的是，如果当身没中，路卡利欧会有着长达 `46帧` 的无法操作的后摇，会被大惩罚，所以不能凹当身，更多是用作出其不意的脱连或是守边。
+
+下B当身被命中后，路卡利欧会消失并在 `8帧` 后从当身目标的两侧踢入，所以当身是不适用于那些快速的位移攻击判定的（例如**露琪娜的上B、克劳德的limit上B、GW的上B**等）。玩家是可以通过按住“左”或者“右”来操作路卡利欧的**水平**踢击方向（类似忍蛙，但没有垂直方向）。踢击过程全程拥有无形帧，但后续的飞出是有形的，所以要当心那种判定非常硬且持续帧长的攻击。
+
+值得注意的是，路卡利欧的当身带有**追踪**机制，如果路卡利欧踢的是对手，则会追踪被踢的部位；如果路卡利欧踢的是道具，则会进入两段判定：一是这个道具还是否属于对手；二是这个道具是否在它所属对手的一定范围内。这个追踪机制对付诸如林克的回旋镖、村民的弹弓有奇效。
+
+<div class="img-row">
+  <img src="https://ssb.wiki.gallery/images/thumb/2/28/Lucario_Down_B_SSBU_High_Aura.gif/200px-Lucario_Down_B_SSBU_High_Aura.gif" alt="Lucario Double Team" style="height:min(10rem, 20vw);">
+  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioDoubleTeamHit.gif" alt="Lucario Double Team (Hit)" style="height:min(10rem, 20vw);">
+</div>
+
+---
+
+### 抓和投技 | Grabs & Throws
+
+路卡利欧的抓和投技在大乱斗中算是中规中矩。不近不远的抓、高波导下的投杀、和连招起手的投技，让路卡利欧的抓在立回中颇具实用价值。路卡利欧的投的收益也很有意思：以上投追求连招收益，以前后投追求受身择和场地主导权、以下投为Mix击杀招，各有各的用处。在实战中用好路卡利欧的投是路卡玩家必须掌握的技能。
+
+#### 原地抓 | 抓
+
+#### 冲刺正身抓 | 跑抓
+
+#### 冲刺转身抓 | 锚点抓
+
+#### 向前投技 | 前投
+
+#### 向后投技 | 前投
+
+#### 向上投技 | 上投
+
+#### 向下投技 | 下投
 
 ## 后续
 
