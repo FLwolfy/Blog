@@ -179,7 +179,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 
 普B从零蓄满总共需要 `99帧` ，蓄满力了之后发射则需要 `17帧` 。在高波导下，波导球削盾效果很强，而且有 `8帧` 的盾僵，是个很强的飞行道具。值得注意的是，高波导的满蓄的波导球可以抵消并穿透大多数道具（类似于萨姆斯的满蓄炮），可以以此作为打道具角的接近手段。
 
-此外，波导球蓄力过程中可以通过在 `4帧` 内快弹盾来取消蓄力，也可以靠跳取消蓄力，这分别对应着 **CSCCharge Shield Cancel）**和**CJC(Charge Jump Cancel)**。这些技巧可以用于移动或诱导对手操作，这些技巧会在后面的技巧部分详细说明。
+此外，波导球蓄力过程中可以通过在 `4帧` 内快弹盾来取消蓄力，也可以靠跳取消蓄力，这分别对应着 **CSC（Charge Shield Cancel）**和**CJC（Charge Jump Cancel）**。这些技巧可以用于移动或诱导对手操作，这些技巧会在后面的技巧部分详细说明。
 
 普B还有个非常重要的技巧是用于**B反派生（B-Reverses）**。路卡利欧的空速优势使得它可以灵活的靠B反以及其他的B反派生来改变自身动量来迷惑对手。B反派生能够带来很多进阶技巧和击杀尝试，这个会在后面的技巧篇和立回篇具体详细展开。
 
@@ -187,6 +187,18 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
   <img src="https://ssb.wiki.gallery/images/thumb/b/b1/Lucario_Neutral_B_SSBU_High_Aura.gif/200px-Lucario_Neutral_B_SSBU_High_Aura.gif" alt="Lucario Neutral B" style="height:min(10rem, 20vw);">
 </div>
 
+#### 横必杀技 | 横B
+
+路卡利欧的横B是向前喷一长距离的波导，有非常大的脱节判定，但是发射的波导是**道具**判定，会被带有反射机制的当身惩罚。横B发动为 `24帧` ，后摇为 `38帧` ，算是一个慢招，发空会被大惩罚。
+
+横B也是一个**指令投**，在地面上是发动后的第 `9帧` 会触发抓判定，会对被抓到的对手造成强大的伤害和击飞，所以横B也是路卡利欧的一个强大击杀mix选项。横B的指令投是可以**战斧**输入的，在即将落地前预先输入横B会在落地时立刻抓到对手。横B的抓判定主要用于与普B波导球的辅助立回，通过你的道具迫使对手开盾，然后用指令抓狠狠惩罚或击杀。
+
+此外，横B的喷波判定也是一个强大的守边工具，特别是在对手知道你的波导球没有蓄满的时候，场外发射横B能够得到意想不到的击杀；另外，在高波导下，横B的喷波判定是可以覆盖**两帧**的，尽管没那么实用，但也可以用作在未蓄波导球时守边的思路之一。
+
+<div class="img-row">
+  <img src="https://ssb.wiki.gallery/images/thumb/9/97/Lucario_Side_B_SSBU.gif/300px-Lucario_Side_B_SSBU.gif" alt="Lucario Force Palm" style="height:min(10rem, 20vw);">
+  <img src="https://ssb.wiki.gallery/images/thumb/1/1d/Lucario_Side_B_SSBU_Grab_High_Aura.gif/200px-Lucario_Side_B_SSBU_Grab_High_Aura.gif" alt="Lucario Force Palm (Grab)" style="height:min(10rem, 20vw);">
+</div>
 
 ## 后续
 
