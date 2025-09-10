@@ -28,9 +28,9 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 路卡利欧的 Jab 虽然是 `5帧` 起手，理论上可以用来抢招，但判定小整体性能偏弱，不具备压制力或稳定性，因此在实战中不算实用，并不推荐作为常规的脱连手段使用。它更重要的作用在于作为 Jablock 连招的起手去获得大收益。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioJab1.gif" alt="Lucario Jab 1">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioJab2.gif" alt="Lucario Jab 2">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioJab3.gif" alt="Lucario Jab 3">
+  <img src="/images/posts/lucario-guide/LucarioJab1.gif" alt="Lucario Jab 1">
+  <img src="/images/posts/lucario-guide/LucarioJab2.gif" alt="Lucario Jab 2">
+  <img src="/images/posts/lucario-guide/LucarioJab3.gif" alt="Lucario Jab 3">
 </div>
 
 #### 冲刺攻击 | DA
@@ -40,7 +40,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 需要特别注意的有两点：DA 在近打点是可以**穿盾**的，较为安全，可以作为一种出其不意的接近手段；DA 的攻击判定前期是甜点判定，具备非常优秀的击飞能力。若能在自身中高波导时命中甜点，是个不错的击杀确认。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioDashAttack.gif" alt="Lucario Dash Attack">
+  <img src="/images/posts/lucario-guide/LucarioDashAttack.gif" alt="Lucario Dash Attack">
 </div>
 
 #### 横强攻击 | 横T
@@ -50,7 +50,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 值得注意的是，路卡的横T有着斜向上和斜向下两个额外角度：斜上横T可以抓对手跳或者落地；斜下横T可以用来守边抓对手**两帧**，守边技巧在后面会具体提到。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioFTilt.gif" alt="Lucario Forward Tilt">
+  <img src="/images/posts/lucario-guide/LucarioFTilt.gif" alt="Lucario Forward Tilt">
 </div>
 
 #### 上强攻击 | 上T
@@ -60,7 +60,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 需要注意，上T不论是身后还是身前打点打盾都非常不安全（才不是史蒂夫），即便是高波导也有着 `-18帧` 的打盾，所以谨慎使用。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioUTilt.gif" alt="Lucario Up Tilt">
+  <img src="/images/posts/lucario-guide/LucarioUTilt.gif" alt="Lucario Up Tilt">
 </div>
 
 #### 下强攻击 | 下T
@@ -70,7 +70,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 此外，在对手低百分比时下T可以接抓和 DA ，在自身高波导时可以接空后确，是一个不错的连招起手技。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioDTilt.gif" alt="Lucario Down Tilt">
+  <img src="/images/posts/lucario-guide/LucarioDTilt.gif" alt="Lucario Down Tilt">
 </div>
 
 #### 横猛击 | 横S
@@ -80,7 +80,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 路卡利欧很需要读对手的习惯，该招作为硬读手段之一可以实现非常早期的击杀，是个极具威胁性的压制武器。不少玩家将此招视为“路卡利欧的核心技能”，但需提醒：横S虽强，但过度凹会被读。横S作为强大的mix手段是路卡利欧的魅力技能之一。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioFSmash.gif" alt="Lucario Forward Smash">
+  <img src="/images/posts/lucario-guide/LucarioFSmash.gif" alt="Lucario Forward Smash">
 </div>
 
 #### 上猛击 | 上S
@@ -92,7 +92,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 但需要注意的是，上S打盾是不安全的，反复硬读容易被抓反或大硬直惩罚。因此上S不应无脑出，而是作为一个击杀的mix手段。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioUSmash.gif" alt="Lucario Up Smash">
+  <img src="/images/posts/lucario-guide/LucarioUSmash.gif" alt="Lucario Up Smash">
 </div>
 
 #### 下猛击 | 下S
@@ -102,7 +102,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 在实战中，下S同上S类似也可配合波导球取消（**ASC**）进行确认连段，后续会对 ASC 连招进行详述。同时，下S也是最稳定的 **Jablock** 连招终结，是真连且输入空窗期和力度较都不错，**Jablock** 系列连招会在后面进阶教学中提到。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioDSmash.gif" alt="Lucario Down Smash">
+  <img src="/images/posts/lucario-guide/LucarioDSmash.gif" alt="Lucario Down Smash">
 </div>
 
 ---
@@ -120,7 +120,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 空N在低百分比可以接上T、下T和抓，这是路卡利欧低百分比的主要连招；背身的空N对空还可以连空后进行确认。具体的连招在后续连招部分会提到。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioNAir.gif" alt="Lucario Neutral Air">
+  <img src="/images/posts/lucario-guide/LucarioNAir.gif" alt="Lucario Neutral Air">
 </div>
 
 #### 空中前攻击 | 空前
@@ -132,7 +132,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 需要注意的是，空前摸盾是没空N那么安全的，即便是高波导下也有 `-5帧` 的对盾惩罚，会被有防备的对手确反，所以在摸空前连招或是落地确认的时候，要控好距离，也不能滥用。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioFAir.gif" alt="Lucario Forward Air">
+  <img src="/images/posts/lucario-guide/LucarioFAir.gif" alt="Lucario Forward Air">
 </div>
 
 #### 空中后攻击 | 空后
@@ -142,7 +142,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 在实战中，波导球取消（**ASC**）接空后是路卡利欧标志性的确认连段，但要注意，这个连招不一定真，对使用者的时机把握和双方的百分比有要求，更稳妥的办法是 ASC 接 ASC 接空后，这个在后续连招会提到。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioBAir.gif" alt="Lucario Back Air">
+  <img src="/images/posts/lucario-guide/LucarioBAir.gif" alt="Lucario Back Air">
 </div>
 
 #### 空中上攻击 | 空上
@@ -154,7 +154,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 落地空上是一个不错的摸击杀动作，但要注意，空上的发动早期落地会造成较大的后摇，需要稍微滞后一点再速降。落地空上不论是酸点击中还是甜点击中都能确认，酸点空上可以真连接上空上。不过需要注意的一点是，空上对盾是不安全的，有着 `-10/-9帧` 的对盾惩罚，所以落地空上可以作为mix手段，不要滥用。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioUAir.gif" alt="Lucario Up Air">
+  <img src="/images/posts/lucario-guide/LucarioUAir.gif" alt="Lucario Up Air">
 </div>
 
 #### 空中下攻击 | 空下
@@ -166,7 +166,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 空下一取消是空下的特色技，一般是通过贴地空下加下拉动量实现。空下一取消能够衔接上任何一种连招起手（真不真待确认），也可以接上横B进行击杀确认，是一个非常帅气的击杀确认。此外，空下一取消还是路卡利欧特殊的最速上板技——空下上板（**Dair Landing**）的前提条件，在空中特定的时机触发空下能够使得路卡利欧只打出空下一并落在板子上，这比传统的波纹上板（**Wave Landing**）还要快 `12帧` ，这使得路卡利欧能够给对手提供的板上压力非常之大。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioDAir.gif" alt="Lucario Down Air">
+  <img src="/images/posts/lucario-guide/LucarioDAir.gif" alt="Lucario Down Air">
 </div>
 
 ---
@@ -186,7 +186,7 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 普B还有个非常重要的技巧是用于**B反派生（B-Reverses）**。路卡利欧的空速优势使得它可以灵活的靠B反以及其他的B反派生来改变自身动量来迷惑对手。B反派生能够带来很多进阶技巧和击杀尝试，这个会在后面的技巧篇和立回篇具体详细展开。
 
 <div class="img-row">
-  <img src="https://ssb.wiki.gallery/images/thumb/b/b1/Lucario_Neutral_B_SSBU_High_Aura.gif/200px-Lucario_Neutral_B_SSBU_High_Aura.gif" alt="Lucario Neutral B">
+  <img src="/images/posts/lucario-guide/LucarioNB.gif" alt="Lucario Neutral B">
 </div>
 
 #### 发劲 | 横B
@@ -198,8 +198,8 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 此外，横B的喷波判定也是一个强大的守边工具，特别是在对手知道你的波导球没有蓄满的时候，场外发射横B能够得到意想不到的击杀；另外，在高波导下，横B的喷波判定是可以覆盖**两帧**的，尽管没那么实用，但也可以用作在未蓄波导球时守边的思路之一。
 
 <div class="img-row">
-  <img src="https://ssb.wiki.gallery/images/thumb/9/97/Lucario_Side_B_SSBU.gif/300px-Lucario_Side_B_SSBU.gif" alt="Lucario Force Palm">
-  <img src="https://ssb.wiki.gallery/images/thumb/1/1d/Lucario_Side_B_SSBU_Grab_High_Aura.gif/200px-Lucario_Side_B_SSBU_Grab_High_Aura.gif" alt="Lucario Force Palm (Grab)">
+  <img src="/images/posts/lucario-guide/LucarioFB.gif" alt="Lucario Force Palm">
+  <img src="/images/posts/lucario-guide/LucarioFBGrab.gif" alt="Lucario Force Palm (Grab)">
 </div>
 
 #### 神速 | 上B
@@ -214,8 +214,8 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 有趣的是，路卡利欧的贴地上B在特定地图（目前已知**PS2**）是可以进行特殊的**神速抢边（Extreme Hogging）**。具体操作如下：左侧抢边需要贴地上B之后立刻输入“下↓”方向；右侧抢边则是贴地上B之后立刻输入“右下↘”方向，之后再"左下↙"。左右两侧操作不一样，且路卡利欧抢边不是特别实用，慎用。
 
 <div class="img-row">
-  <img src="https://ssb.wiki.gallery/images/thumb/5/54/Lucario_Up_B_SSBU.gif/300px-Lucario_Up_B_SSBU.gif" alt="Lucario Extreme Speed">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioExtremeSpeedA.gif" alt="Lucario Extreme Speed (Hit)">
+  <img src="/images/posts/lucario-guide/LucarioUB.gif" alt="Lucario Extreme Speed">
+  <img src="/images/posts/lucario-guide/LucarioUBHit.gif" alt="Lucario Extreme Speed (Hit)">
 </div>
 
 #### 影子分身 | 下B
@@ -227,8 +227,8 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 值得注意的是，路卡利欧的当身带有**追踪**机制，如果路卡利欧踢的是对手，则会追踪被踢的部位；如果路卡利欧踢的是道具，则会进入两段判定：一是这个道具还是否属于对手；二是这个道具是否在它所属对手的一定范围内。这个追踪机制对付诸如林克的回旋镖、村民的弹弓有奇效。
 
 <div class="img-row">
-  <img src="https://ssb.wiki.gallery/images/thumb/2/28/Lucario_Down_B_SSBU_High_Aura.gif/200px-Lucario_Down_B_SSBU_High_Aura.gif" alt="Lucario Double Team">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioDoubleTeamHit.gif" alt="Lucario Double Team (Hit)">
+  <img src="/images/posts/lucario-guide/LucarioDB.gif" alt="Lucario Double Team">
+  <img src="/images/posts/lucario-guide/LucarioDBHit.gif" alt="Lucario Double Team (Hit)">
 </div>
 
 ---
@@ -246,9 +246,9 @@ description: 这是个人对于任天堂明星大乱斗路卡利欧的全方位�
 特别的，许多连招能够衔接上抓，简单的例子有：低百分比的速降空N下T接抓；或是 **ASC** 后接转身原地抓。这些都是不错的摸抓方式，详细的连招会在后面展开。
 
 <div class="img-row">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioGrab.gif" alt="Lucario Grab">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioDashGrab.gif" alt="Lucario Dash Grab">
-  <img src="https://ultimateframedata.com/hitboxes/lucario/LucarioPivotGrab.gif" alt="Lucario Pivot Grab">
+  <img src="/images/posts/lucario-guide/LucarioGrab.gif" alt="Lucario Grab">
+  <img src="/images/posts/lucario-guide/LucarioDashGrab.gif" alt="Lucario Dash Grab">
+  <img src="/images/posts/lucario-guide/LucarioPivotGrab.gif" alt="Lucario Pivot Grab">
 </div>
 
 #### 向前投技 | 前投
