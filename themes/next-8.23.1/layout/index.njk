@@ -7,14 +7,17 @@
 
 {% block content %}
 
-  {% set home_post = false %}
+  {# 获得所有主页文章 #}
+  {% set home_posts = [] %}
   {% for p in page.posts.toArray() %}
-    {% if p.home and not home_post %}
-      {% set home_post = p %}
+    {% if p.home %}
+      {% set home_posts = home_posts.concat([p]) %}
     {% endif %}
   {% endfor %}
 
-  {% if home_post %}
+  {# 随机选择一篇主页文章 #}
+  {% if home_posts | length %}
+    {% set home_post = home_posts | random %}
     <section>
       <article>
         {{ home_post.content }}
