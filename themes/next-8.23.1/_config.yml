@@ -98,7 +98,7 @@ open_graph:
 menu:
   home: / || fa fa-home
   articles: /articles/ || fa fa-file-alt
-  tags: /tags/ || fa fa-folder-open
+  cats&Tags: /tags/ || fa fa-folder-open
   #categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   #about: /about/ || fa fa-user

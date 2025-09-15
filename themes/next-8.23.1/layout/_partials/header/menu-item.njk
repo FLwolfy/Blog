@@ -4,7 +4,7 @@
   <li class="menu-item menu-item-{{ node.name | lower | replace(' ', '-') }}">
 
     {%- set menuIcon = '<i class="' + node.icon + ' fa-fw"></i>' if theme.menu_settings.icons and node.icon else '' %}
-    {%- set menuText = __('menu.' + node.name) | replace('menu.', '') %}
+    {%- set menuText = __('menu.' + node.name) + ' | ' + node.name.charAt(0).toUpperCase() + node.name.slice(1) -%}
 
     {%- set menuBadge = '' %}
     {%- if theme.menu_settings.badges %}
