@@ -1,0 +1,9 @@
+{% block content %}
+
+  {%- for post in site.posts.toArray() %}
+    {{ partial('_macro/post-card.njk', {post: post}) }}
+  {%- endfor %}
+
+  {%- include '_partials/pagination.njk' -%}
+
+{% endblock %}

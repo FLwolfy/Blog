@@ -9,7 +9,7 @@
 }
 
 .post-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.12),
               0 0 25px 10px $color-img-box-shadow-hover-custom; /* 荧光轮廓 */
 }
@@ -18,6 +18,9 @@
   position: relative; /* 让伪元素相对定位 */
   flex: 0 0 30%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
   clip-path: polygon(
     0 0, 20px 10px, 10px 20px, 25px 30px, 10px 40px, 30px 50px, 20px 70px, 
@@ -30,6 +33,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
   transition: transform 0.8s ease;
 }
