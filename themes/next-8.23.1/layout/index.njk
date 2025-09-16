@@ -19,9 +19,9 @@
   {% if home_posts | length %}
     {% set home_post = home_posts | random %}
     <section>
-      <article>
-        {{ home_post.content }}
-      </article>
+      <div class="post-body{% if home_post.direction and home_post.direction.toLowerCase() === 'rtl' %} rtl{% endif %} {% if home_post.style_enable === false %}no-style{% endif %}" itemprop="articleBody">
+        {{- home_post.content }}
+      </div>
     </section>
   {% endif %}
 

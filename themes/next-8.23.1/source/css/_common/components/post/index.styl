@@ -30,7 +30,8 @@
   }
 
   if (hexo-config('motion.transition.post_body')) {
-    .post-body {
+    // 首页靠 main-inner 做动画
+    body:not(.home) .post-body {
       visibility: hidden;
     }
   }
