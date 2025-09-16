@@ -8,7 +8,7 @@
 {% block content %}
 
   {%- for post in site.posts.toArray() %}
-    {{ partial('_macro/post.njk', {post: post, is_index: true}) }}
+    {{ partial('_macro/post-brief.njk', {post: post}) }}
   {%- endfor %}
 
   {%- include '_partials/pagination.njk' -%}
