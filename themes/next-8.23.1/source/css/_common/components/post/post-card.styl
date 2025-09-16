@@ -5,7 +5,7 @@
   margin-bottom: 20px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
-  height: 230px;
+  height: 150px;
 }
 
 .post-card:hover {
@@ -31,7 +31,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.5s ease;
+  transition: transform 0.8s ease;
 }
 
 /* 灰白色蒙版 */
@@ -59,15 +59,14 @@
 
 .post-card-content {
   flex: 1;
-  padding: 16px;
+  padding: 16px 16px 0 16px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .post-card-title {
   font-size: 1.25rem;
-  margin: 0 0 8px;
+  margin: 0px;
 }
 
 .post-card-title a {
@@ -76,7 +75,7 @@
 
 .post-card-excerpt {
   font-size: 0.95rem;
-  margin-bottom: 12px;
+  margin: 8px;
 
   display: -webkit-box;        /* 必须，用于多行截断 */
   -webkit-box-orient: vertical; /* 必须，设置为垂直方向 */
@@ -87,20 +86,25 @@
 
 .post-card-meta {
   font-size: 0.8rem;
-  margin-bottom: 8px;
+  margin: 0;
+  margin-top: auto;
+  opacity: 0.4;
 }
 
 .post-card-btn {
   align-self: flex-start;
-  padding: 6px 12px;
+  padding: 2px 4px;
   font-size: 0.85rem;
-  color: #fff;
-  background-color: #007acc;
+  background-color: $btn-default-bg;       // 背景色
+  color: $btn-default-color;               // 文字颜色
+  border: 1px solid $btn-default-border-color; // 边框颜色
   border-radius: 6px;
   text-decoration: none;
-  transition: background-color 0.3s;
 }
 
 .post-card-btn:hover {
-  background-color: #005fa3;
+  background-color: $btn-default-hover-bg;
+  color: $btn-default-hover-color;
+  border-color: $btn-default-hover-border-color;
 }
+
