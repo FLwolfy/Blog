@@ -3,14 +3,11 @@
 {##################}
 <div class="post-card">
   {# 文章简介和信息 #}
-  <div class="post-card-content">
+  <div class="post-card-content" style="{% if post.cover_img %}padding-right: 0;{% else %}width: 100%{% endif %}">
     
-    <div style="display: flex; justify-content: space-between; align-items: center;">
-      <h2 class="post-card-title">
-        <a href="{{ url_for(post.path) }}">{{ post.title or __('post.untitled') }}</a>
-      </h2>
-      <a href="{{ url_for(post.path) }}" class="post-card-btn">阅读文章</a>
-    </div>
+    <h2 class="post-card-title">
+      <a href="{{ url_for(post.path) }}">{{ post.title or __('post.untitled') }}</a>
+    </h2>
 
     {% if post.description %}
       <p class="post-card-excerpt">{{ post.description }}</p>
@@ -18,9 +15,10 @@
       <p class="post-card-excerpt">{{ post.excerpt }}</p>
     {% endif %}
 
-    <div class="post-card-meta">
-      <time datetime="{{ moment(post.date).format() }}">{{ date(post.date, 'YYYY-MM-DD') }}</time>
+    <div class="post-meta-container">
+      {{ partial('_partials/post/post-meta-short.njk') }}
     </div>
+
   </div>
 
   {# 如果文章有封面图，显示在右侧 #}
