@@ -53,9 +53,9 @@ darkmode: true
 favicon:
   small: /images/core/favicon.ico
   medium: /images/core/favicon.ico
-  apple_touch_icon: /images/core/icon.png
-  safari_pinned_tab: /images/core/icon.png
-  #android_manifest: /manifest.json
+  apple_touch_icon: /images/core/apple-touch-icon.png
+  safari_pinned_tab: /images/core/pin-icon.png
+  android_manifest: /images/core/andriod.webmanifest
 
 # Custom Logo (Warning: Do not support scheme Mist)
 custom_logo: #/images/core/logo.png
@@ -144,7 +144,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: /images/core/icon.png
+  url: /images/core/avatar.jpg
   # If true, the avatar will be displayed in circle.
   rounded: true
   # If true, the avatar will be rotated with the cursor.

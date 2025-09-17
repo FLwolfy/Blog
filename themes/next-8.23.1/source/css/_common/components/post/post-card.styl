@@ -77,16 +77,20 @@
   overflow: hidden;
 }
 
-/* 卡片标题 */
+/* 保留标题的行高/高度 */
 .post-card-title {
   font-size: 1.25rem;
   line-height: 1.75rem;
   height: 1.75rem;
   margin: 0 !important;
+
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
+}
 
+/* 关键：把 a 变成块级并限制宽度，同时在同一元素上设置省略号 */
+.post-card-title a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
