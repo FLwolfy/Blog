@@ -7,6 +7,7 @@
 
 {% block content %}
 
+  {% if page.cover_img %}{{ partial('_macro/post-cover.njk', {post: page}) }}{% endif %}
   {{ partial('_macro/post.njk', {post: page}) }}
 
 {% endblock %}

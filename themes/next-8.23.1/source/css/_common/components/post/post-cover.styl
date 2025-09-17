@@ -1,0 +1,29 @@
+.post-block-cover {
+  width: calc(100% + 80px);  /* 左右各扩展 40px */
+  max-width: 100vw;
+  margin-top: auto;
+  margin-bottom: 4rem;
+  height: 15rem;              /* 可自定义高度 */
+  overflow: hidden;
+
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.post-block-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.75;
+
+  /* 渐变透明效果 */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
