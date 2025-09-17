@@ -29,6 +29,16 @@
     35px 50%, 15px 60%, 25px 70%, 10px 80%, 20px 90%, 
     0 100%, 100% 100%, 100% 0
   );
+
+
+  /* 左侧渐变遮罩 */
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+
+  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 100%);
+  mask-repeat: no-repeat;
+  mask-size: cover;
 }
 
 .post-card-image a {
@@ -44,15 +54,6 @@
   object-position: center;
   display: block;
   transition: transform 0.8s ease;
-
-  /* 左侧渐变遮罩 */
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 100%);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: cover;
-
-  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 100%);
-  mask-repeat: no-repeat;
-  mask-size: cover;
 }
 
 .post-card-image::after {
