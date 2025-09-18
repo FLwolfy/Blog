@@ -11,5 +11,6 @@ home: false
 toc_enable: true
 style_enable: true
 
-date: {{ date | date('YYYY-MM-DD') }}
+date: {{ date }}
+cover_img: 图片链接
 ---

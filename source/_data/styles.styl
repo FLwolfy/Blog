@@ -257,7 +257,7 @@ a:hover {
     margin: 2em auto;
   }
 
-  // 图片样式
+  // 水平排列图片样式
   .img-row {
     display: flex;
     justify-content: center;
@@ -281,4 +281,29 @@ a:hover {
       box-shadow: 0 0 25px 10px $color-img-box-shadow-hover-custom;
     }
   }
+
+  // Featured 单张大图
+  .img-featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+
+    img {
+      width: min(100%, 60rem);   // 大图宽度自适应，最大 60rem
+      height: auto;              // 保持比例
+      display: block;
+      border: none;
+      object-fit: cover;
+      border-radius: 12px;       // 比 row 图更圆滑一些
+      box-shadow: 0 0 20px 8px $color-img-box-shadow-custom;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    img:hover {
+      box-shadow: 0 0 35px 15px $color-img-box-shadow-hover-custom;
+      transform: scale(1.02); // hover 时稍微放大，增强存在感
+    }
+  }
+
 }
