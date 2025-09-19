@@ -1,0 +1,103 @@
+/* 右侧详情区域 */
+.track-detail {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  width: 38%;
+  height: 100%;       /* 整体撑满容器 */
+  overflow: hidden;
+  display: block;     /* 外层不要 flex */
+  gap: 0;
+
+  /* 左右渐变遮罩，左边 5%，右边 5% */
+  -webkit-mask-image: 
+    linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-composite: destination-in;
+
+  mask-image: 
+    linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  mask-composite: intersect;
+}
+
+/* 封面图，占 30% 高度 */
+.track-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;        /* 3:7 */
+  overflow: hidden;
+}
+
+.track-cover a,
+.track-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 内容卡片，占 70% 高度 */
+.track-card {
+  position: absolute;
+  top: 30%;           /* 紧贴封面下方 */
+  left: 0;
+  width: 100%;
+  height: 70%;        /* 3:7 */
+  padding: 1.2rem 2rem 2rem 2rem;
+  background: $article-track-info-bg;
+  box-sizing: border-box;
+
+  display: flex;           /* 卡片内部用 flex */
+  flex-direction: column;  /* 垂直排列 */
+}
+
+/* 标题 */
+.track-card .track-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+  text-decoration: none;
+}
+
+/* 简介 */
+.track-card .track-description {
+  font-size: 1.0rem;
+  line-height: 1.5rem;
+  margin: 0.75rem; 1rem;
+}
+
+.track-readmore {
+  display: inline-block;          /* 变成块级/行内块 */
+  margin-top: auto;               /* 推到卡片底部 */
+  padding: 0.4rem 0.8rem;         /* 内边距 */
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: $btn-default-bg;
+  border: none;                   /* 去掉默认边框 */
+  border-radius: 4px;             /* 圆角 */
+  text-decoration: none;          /* 去掉下划线 */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.track-readmore:hover {
+  background-color: $btn-default-hover-bg;      /* hover 背景色 */
+  transform: translateY(-1px);    /* 小幅上移 */
+}
+
+/* meta 信息 */
+.track-meta {
+  width: 100%;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

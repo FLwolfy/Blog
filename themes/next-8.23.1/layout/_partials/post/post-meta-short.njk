@@ -25,7 +25,7 @@
   {%- endif %}
 
   {# 分类 #}
-  {%- if post.categories and post.categories.length and theme.post_meta.categories %}
+  {%- if (not no_tags) and post.categories and post.categories.length and theme.post_meta.categories %}
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fas fa-th"></i>
@@ -45,7 +45,7 @@
   {%- endif %}
 
   {# 标签 #}
-  {%- if post.tags and post.tags.length %}
+  {%- if (not no_tags) and post.tags and post.tags.length %}
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-tag"></i>

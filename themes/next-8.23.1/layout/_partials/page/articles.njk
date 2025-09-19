@@ -1,8 +1,25 @@
 {% block content %}
 
-  {%- for post in site.posts.toArray() %}
-    {{ partial('_macro/post-card.njk', {post: post}) }}
-  {%- endfor %}
+  <div class="osu-container">
+    <!-- 左侧轮盘 -->
+    <div class="osu-wheel">
+      {%- for post in site.posts.toArray() %}
+        {{ partial('_macro/post-track.njk', {post: post}) }}
+      {%- endfor %}
+      {%- for post in site.posts.toArray() %}
+        {{ partial('_macro/post-track.njk', {post: post}) }}
+      {%- endfor %}
+      {%- for post in site.posts.toArray() %}
+        {{ partial('_macro/post-track.njk', {post: post}) }}
+      {%- endfor %}
+    </div>
+
+    <!-- 右侧详情 -->
+    <div class="track-detail">
+      {{ partial('_macro/post-info.njk') }}
+    </div>
+  </div>
+
 
   {%- include '_partials/pagination.njk' -%}
 

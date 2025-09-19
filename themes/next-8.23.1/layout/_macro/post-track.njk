@@ -1,0 +1,36 @@
+{##################}
+{### POST TRACK ###}
+{##################}
+<div class="track" 
+     data-title="{{ post.title }}" 
+     data-description="{{ post.description | safe }}" 
+     data-cover="{{ url_for(post.cover_img) }}"
+     data-link="{{ url_for(post.path) }}">
+
+  {# track 内容主体 #}
+  <div class="track-content" style="{% if post.cover_img %}padding-right: 0;{% else %}width: auto{% endif %}">
+    
+    <h2 class="track-title">
+      <a href="{{ url_for(post.path) }}">{{ post.title or __('post.untitled') }}</a>
+    </h2>
+
+    <div class="track-meta-container">
+      {{ partial('_partials/post/post-meta-short.njk', { post: post, no_tags: true }) }}
+    </div>
+  </div>
+
+  {# 如果文章有封面图，显示在右侧 #}
+  {% if post.cover_img %}
+    <div class="track-image">
+      <img src="{{ url_for(post.cover_img) }}" alt="{{ post.title }}">
+    </div>
+  {% endif %}
+
+  {# META 不显示，仅提供信息 #}
+  <div class="track-meta-html" style="display:none">
+    {{ partial('_partials/post/post-meta-short.njk', { post: post }) }}
+  </div>
+</div>
+{######################}
+{### END POST TRACK ###}
+{######################}

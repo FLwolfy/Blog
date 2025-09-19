@@ -1,5 +1,5 @@
 ---
-title: 路卡利欧全方位教程【更新中...】
+title: 路卡利欧全方位教程
 categories:
   - 游戏
 tags:
