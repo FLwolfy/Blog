@@ -1,9 +1,10 @@
 /* 右侧详情区域 */
 .track-detail {
+  background: $article-track-info-bg;
   position: absolute;
-  top: 0;
-  right: 2%;
-  width: 38%;
+  top: 1rem;
+  right: 1%;
+  width: 37%;
   height: 100%;       /* 整体撑满容器 */
   overflow: hidden;
   display: block;
@@ -62,86 +63,78 @@
 /* 内容卡片，占 70% 高度 */
 .track-card {
   position: absolute;
-  top: 30%;           /* 紧贴封面下方 */
+  top: 30%;
   left: 0;
   width: 100%;
-  height: 70%;        /* 3:7 */
-  padding: 1.2rem 2rem 2rem 2rem;
-  background: $article-track-info-bg;
+  height: 70%;
+  padding: 1.2rem 2rem 2.5rem 2rem;
   box-sizing: border-box;
-  display: block;
+
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
 }
 
-/* 标题 */
-.track-card .track-title {
-  height: 10%;
+.track-title {
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
-  overflow: hidden;          /* 超出部分隐藏 */
-  text-overflow: ellipsis;   /* 超出文字显示省略号 */
-  white-space: nowrap;       /* 不换行 */
-}
-
-/* meta 信息 */
-.track-meta {
-  width: 100%;
-  height: 15%;
-  max-height: 15%;
-  margin: 1.5% 0;
-  font-size: 0.8rem;
-  line-height: 1.0rem;
-  color: #888;
-  align-items: center;
-  justify-content: center;
-  display: -webkit-box;
-  word-break: break-word;         /* 强制长单词换行 */
-  white-space: normal;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;   /* 一行标题 */
 }
 
-/* 简介 */
-.track-card .track-description {
-  font-size: 1.0rem;
+.track-meta {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #888;
+  margin: 0.5rem 0;
+}
+
+.track-description {
+  font-size: 1rem;
   line-height: 1.5rem;
-  margin-top: 0;
-  max-height: 55%;
-  overflow: hidden;
+  overflow: hidden;  
+  flex: 1 1 auto;       /* 填充剩余空间 */
+  
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 999;  /* 无限行（999行即可） */
+  white-space: normal;
+  word-break: break-word;
 }
 
 .track-readmore {
-  display: flex;                /* 改成 flex 布局 */
-  align-items: center;          /* 垂直居中 */
-  justify-content: center;      /* 水平居中 */
-  padding: 0.5rem 1%;         
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1%;
+  margin: 0 10%;
   font-size: 1.5rem;
   font-weight: 500;
   background-color: $btn-default-bg;
-  border: none;                 
-  border-radius: 4px;           
-  text-decoration: none;        
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.2s;
-  width: 98%;
-  height: 10%;
-  text-align: center;           /* 备用，确保文字水平居中 */
-}
 
+  width: 80%;
+  height: 2rem;       /* 固定按钮高度 */
+  margin-top: auto;   /* 推到底部 */
+  text-align: center;
+}
 
 .track-readmore:hover {
-  background-color: $btn-default-hover-bg;      /* hover 背景色 */
-  transform: translateY(-1px);    /* 小幅上移 */
+  background-color: $btn-default-hover-bg;
+  transform: translateY(-1px);
 }
+
 
 @media (max-width: 768px) {
   /* 轮盘主体 */
   .track-detail {
     width: 98%;
     height: 28rem;
-    top: 20rem;
     right: 1%;
 
     -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);

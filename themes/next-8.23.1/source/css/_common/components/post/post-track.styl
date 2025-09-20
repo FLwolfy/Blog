@@ -5,6 +5,7 @@
   position: relative;
   overflow: hidden;
   display: block;
+  padding: 1rem;
 
   /* ===== 上下 + 左右渐变遮罩 ===== */
   -webkit-mask-image: 
@@ -20,6 +21,16 @@
   mask-repeat: no-repeat;
   mask-size: 100% 100%, 100% 100%;
   mask-composite: intersect;
+}
+
+/* 独立亮白边框 */
+.osu-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border: 1rem solid rgba(255,255,255,0.8); /* 亮白色 */
+  pointer-events: none;                     /* 不阻挡交互 */
+  box-sizing: border-box;
 }
 
 /* 轮盘主体 */
@@ -179,6 +190,7 @@
   /* 轮盘主体 */
   .osu-wheel {
     position: absolute;
+    top: 30rem;
     width: 100%;
     height: 20rem;
 

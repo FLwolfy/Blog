@@ -28,6 +28,7 @@
    ============================== */
 .cats-tags-container {
   text-align: center;
+  position: relative;
 
   a {
     font-weight: bold;
@@ -54,6 +55,20 @@
   mask-composite: intersect;
 
 }
+
+.cats-tags-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border: 1rem solid transparent;      /* 先设透明边框 */
+  border-radius: 1rem;
+  pointer-events: none;
+  box-sizing: border-box;
+
+  /* 四边颜色不同 */
+  border-image: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.3) 100%) 1;
+}
+
 
 /* ==============================
    分类卡片容器
