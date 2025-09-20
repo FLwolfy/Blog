@@ -5,7 +5,8 @@
      data-title="{{ post.title }}" 
      data-description="{{ post.description | safe }}" 
      data-cover="{{ url_for(post.cover_img) }}"
-     data-link="{{ url_for(post.path) }}">
+     data-link="{{ url_for(post.path) }}"
+     data-created="{{ full_date(post.date) }}">
 
   {# track 内容主体 #}
   <div class="track-content" style="{% if post.cover_img %}padding-right: 0;{% else %}width: auto{% endif %}">
