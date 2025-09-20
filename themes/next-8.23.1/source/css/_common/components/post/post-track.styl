@@ -72,11 +72,12 @@
 
 /* track 内部内容 */
 .track-content {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;      /* 如果内容竖直排列 */
+  justify-content: center;     /* 垂直居中（主轴） */
+  align-items: center;         /* 水平居中（交叉轴） */
   width: 70%;
   height: 100%;
-  padding: 1rem;
-  vertical-align: top;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -190,5 +191,18 @@
     mask-repeat: no-repeat;
     mask-size: 100% 100%;
     mask-composite: intersect;
+  }
+
+  .track {
+    height: 4rem;
+  }
+
+  .track-title {
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+  }
+
+  .track-content .track-meta-container .post-meta {
+    font-size: 0.5rem;
   }
 }
