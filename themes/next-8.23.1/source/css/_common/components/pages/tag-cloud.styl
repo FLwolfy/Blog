@@ -1,75 +1,103 @@
-// 整体部分
+/* ==============================
+   整体标题部分
+   ============================== */
 .enhanced-title {
-  font-size: 30px; 
-  font-weight: bold;
-  padding: 0px 16px;        
-  border-bottom: 2px solid var(--brand-color);
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-size: 2rem;                    // 文字大小
+  font-weight: bold;                   // 粗体
+  padding: 1rem 1rem 0rem 1rem;     // 上右下左内边距
+  border-bottom: 0.125rem solid var(--brand-color); // 底部边框
+  display: flex;                       
+  align-items: center;                 // 垂直居中
+  justify-content: center;             // 水平居中
+  gap: 0.5rem;                         // 图标与文字间距
   color: var(--brand-color);
-  border-radius: 6px;
+  border-radius: 0.375rem;
   background-color: $color-tagcloud-container-custom;
-  backdrop-filter: blur(6px)
-  -webkit-backdrop-filter: blur(6px)
+
+  backdrop-filter: blur(0.375rem);
+  -webkit-backdrop-filter: blur(0.375rem);
 }
 
 .enhanced-title i {
-  font-size: 18px;
-  color: inherit;
+  font-size: 1.125rem;                 // 图标大小
+  color: inherit;                       // 继承文字颜色
 }
 
-.cats-tags-container
-  text-align center
-  
-  a
-    font-weight bold
-    display inline-block
-    margin 10px
+/* ==============================
+   分类标签容器
+   ============================== */
+.cats-tags-container {
+  text-align: center;
 
-  background $color-tagcloud-container-custom
-  border-radius 12px
+  a {
+    font-weight: bold;
+    display: inline-block;
+    margin: 0.625rem;                  // 10px → 0.625rem
+  }
 
-// 分类容器
+  background: $color-tagcloud-container-custom;
+  border-radius: 0.75rem;              // 12px → 0.75rem
+
+  /* 上下 + 左右渐变遮罩（缩小到 5%） */
+  -webkit-mask-image: 
+    linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%),
+    linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%, 100% 100%;
+  -webkit-mask-composite: destination-in;
+
+  mask-image: 
+    linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%),
+    linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%, 100% 100%;
+  mask-composite: intersect;
+
+}
+
+/* ==============================
+   分类卡片容器
+   ============================== */
 .category-collage-categories {
   display: flex;
-  gap: 16px;
+  gap: 1rem;                          // 16px → 1rem
   overflow-x: auto;
-  padding: 12px 10px;
-  margin 0 auto 30px auto;
+  padding: 0.75rem 0.625rem;           // 12px 10px
+  margin: 0 auto 1.875rem auto;        // 0 0 30px 0
   scrollbar-width: thin;
   scrollbar-color: #bbb transparent;
   justify-content: center;
+
+  &::-webkit-scrollbar {
+    height: 0.375rem;                  // 6px → 0.375rem
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 0.1875rem;          // 3px → 0.1875rem
+  }
 }
 
-/* 滚动条样式 */
-.category-collage-categories::-webkit-scrollbar {
-  height: 6px;
-}
-.category-collage-categories::-webkit-scrollbar-track {
-  background: transparent;
-}
-.category-collage-categories::-webkit-scrollbar-thumb {
-  background-color: #bbb;
-  border-radius: 3px;
-}
-
-/* 卡片本体 */
+/* ==============================
+   卡片本体
+   ============================== */
 .category-collage-card {
   background: transparent;
   position: relative;
   flex: 0 0 auto;
   width: 15rem;
   margin: 0;
-  border-radius: 8px;
+  border-radius: 0.5rem;               // 8px → 0.5rem
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   overflow: hidden;
-  box-shadow: none; /* 确保没有底部阴影 */
-  border: none;     /* 确保没有底线 */
+  box-shadow: none;
+  border: none;
 }
 
 .category-collage-card img {
@@ -78,7 +106,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 8px 8px 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
   display: block;
   flex-shrink: 0;
   transition: transform 1.5s ease;
@@ -89,34 +117,36 @@
 }
 
 .category-name {
-  background-color: rgba(0, 0, 0, 0.3); /* 半透明背景让文字更清晰 */
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
-  bottom: 8px;
-  left: 8px;
+  bottom: 0.5rem;                     // 8px → 0.5rem
+  left: 0.5rem;
   margin: 0;
-  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;             // 4px 8px
   font-weight: 900;
-  font-size: 20px;
+  font-size: 1.25rem;                  // 20px → 1.25rem
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 4px;
+  border-radius: 0.25rem;              // 4px
   max-width: 90%;
   pointer-events: none;
   z-index: 2;
 }
 
-// 标签部分
+/* ==============================
+   标签云颜色
+   ============================== */
 for $tag-cloud in (0 .. 10)
   $tag-cloud-color = mix($tag-cloud-end, $tag-cloud-start, $tag-cloud * 10)
   .tag-cloud-{$tag-cloud}
-    border-bottom-color $tag-cloud-color
-    color $tag-cloud-color
+    border-bottom-color: $tag-cloud-color
+    color: $tag-cloud-color
 
 if hexo-config('darkmode')
   @media (prefers-color-scheme: dark)
     for $tag-cloud in (0 .. 10)
       $tag-cloud-color = mix($tag-cloud-end-dark, $tag-cloud-start-dark, $tag-cloud * 10)
       .tag-cloud-{$tag-cloud}
-        border-bottom-color $tag-cloud-color
-        color $tag-cloud-color
+        border-bottom-color: $tag-cloud-color
+        color: $tag-cloud-color
