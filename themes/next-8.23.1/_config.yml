@@ -51,11 +51,11 @@ darkmode: true
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/core/favicon.ico
-  medium: /images/core/favicon.ico
-  apple_touch_icon: /images/core/apple-touch-icon.png
-  safari_pinned_tab: /images/core/pin-icon.png
-  android_manifest: /images/core/andriod.webmanifest
+  small: /images/core/favicon/favicon.ico
+  medium: /images/core/favicon/favicon.ico
+  apple_touch_icon: /images/core/favicon/apple-touch-icon.png
+  safari_pinned_tab: /images/core/favicon/pin-icon.png
+  android_manifest: /images/core/favicon/andriod.webmanifest
 
 # Custom Logo (Warning: Do not support scheme Mist)
 custom_logo: #/images/core/logo.png
