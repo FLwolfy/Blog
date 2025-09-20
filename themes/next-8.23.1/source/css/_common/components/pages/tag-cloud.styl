@@ -29,6 +29,8 @@
 .cats-tags-container {
   text-align: center;
   position: relative;
+  padding: 1rem;
+  margin-bottom: 2rem;
 
   a {
     font-weight: bold;
@@ -53,7 +55,6 @@
   mask-repeat: no-repeat;
   mask-size: 100% 100%, 100% 100%;
   mask-composite: intersect;
-
 }
 
 .cats-tags-container::before {
@@ -66,7 +67,7 @@
   box-sizing: border-box;
 
   /* 四边颜色不同 */
-  border-image: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.3) 100%) 1;
+  border-image: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.25) 100%) 1;
 }
 
 

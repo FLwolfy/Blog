@@ -74,8 +74,9 @@
   flex-direction: column; /* 垂直排列 */
 }
 
-.track-title {
+.track-info-title {
   font-size: 1.2rem;
+  margin-top: 0 !important;
   font-weight: bold;
   text-decoration: none;
   overflow: hidden;
@@ -83,14 +84,13 @@
   white-space: nowrap;   /* 一行标题 */
 }
 
-.track-meta {
+.track-info-meta {
   font-size: 0.8rem;
   line-height: 1rem;
   color: #888;
-  margin: 0.5rem 0;
 }
 
-.track-description {
+.track-info-description {
   font-size: 1rem;
   line-height: 1.5rem;
   overflow: hidden;  
@@ -103,7 +103,7 @@
   word-break: break-word;
 }
 
-.track-readmore {
+.track-info-readmore {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,7 +124,7 @@
   text-align: center;
 }
 
-.track-readmore:hover {
+.track-info-readmore:hover {
   background-color: $btn-default-hover-bg;
   transform: translateY(-1px);
 }
