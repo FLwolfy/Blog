@@ -2,7 +2,7 @@
 .post-card {
   display: block;
   background-color: $article-card-bg;
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
   height: 9rem;
@@ -93,10 +93,6 @@
   line-height: 1.75rem;
   height: 1.75rem;
   margin: 0 !important;
-
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
 }
 
 /* 关键：把 a 变成块级并限制宽度，同时在同一元素上设置省略号 */
@@ -109,7 +105,7 @@
 /* 卡片简介 */
 .post-card-excerpt {
   font-size: 0.95rem;
-  margin: 0.25rem 0.5rem 0.25rem 0.5rem;
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
   height: 4rem;
 
   display: -webkit-box;
@@ -141,6 +137,7 @@
   color: $link-color;
   opacity: 0.4;
   transition: color 0.3s ease;
+  border: none; /* 去除下划线 */
 }
 
 .post-card-content .post-meta-container a:hover {
