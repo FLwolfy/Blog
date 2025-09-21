@@ -117,14 +117,13 @@
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.25);  // 默认半透明灰色
+    background: rgba(0, 0, 0, 0.1);  // 默认半透明灰色
     pointer-events: none;             // 不阻挡交互
-    transition: opacity 0.3s ease;    // hover 时淡出
     z-index: 1;
   }
 
   &:hover::after {
-    opacity: 0;
+    background: rgba(0, 0, 0, 0);  // 默认半透明灰色
   }
 
   /* ==============================

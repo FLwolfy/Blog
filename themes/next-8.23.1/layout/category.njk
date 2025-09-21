@@ -1,5 +1,5 @@
 {% extends '_layout.njk' %}
-{% import '_macro/post-collapse.njk' as post_template with context %}
+
 {% import '_macro/sidebar.njk' as sidebar_template with context %}
 
 {% block title %}{{ __('title.category') }}: {{ page.category }} | {{ title }}{% endblock %}
@@ -20,7 +20,18 @@
         </h1>
       </div>
 
-      {{ post_template.render(page.posts) }}
+      {% for post in site.posts.toArray() | reverse %}
+        {% for cat in post.categories.toArray() %}
+          {% if cat.name == page.category %}
+            <article itemscope itemtype="http://schema.org/Article">
+              <header class="post-header">
+                {{ partial('_macro/post-card.njk', {post: post}) }}
+              </header>
+            </article>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+
     </div>
   </div>
   {##########################}
