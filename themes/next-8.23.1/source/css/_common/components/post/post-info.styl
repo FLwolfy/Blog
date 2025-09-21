@@ -1,55 +1,59 @@
-/* 右侧详情区域 */
+/* ==============================
+   track-detail：右侧详情区域
+   ============================== */
 .track-detail {
   background: $article-track-info-bg;
   position: absolute;
   top: 1rem;
   right: 1%;
   width: 37%;
-  height: 100%;       /* 整体撑满容器 */
+  height: 100%; /* 整体撑满容器 */
   overflow: hidden;
   display: block;
   gap: 0;
 
-  /* 左右渐变遮罩，左边 5%，右边 5% */
-  -webkit-mask-image: 
-    linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
+  /* 左右渐变遮罩（左 5%，右 5%） */
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
   -webkit-mask-composite: destination-in;
 
-  mask-image: 
-    linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
   mask-composite: intersect;
 
-  /* 动画 */
+  /* 动画效果 */
   opacity: 1;
   transform: translateX(0);
   transition: opacity 0.3s ease, transform 0.3s ease;
+
+  /* ==============================
+     fade-out / fade-in 动画类
+     ============================== */
+  &.fade-out {
+    opacity: 0;
+    transform: translateX(20px); /* 向右淡出 */
+  }
+
+  &.fade-in {
+    opacity: 1;
+    transform: translateX(0); /* 从右淡入 */
+  }
 }
 
-
-.track-detail.fade-out {
-  opacity: 0;
-  transform: translateX(20px); /* 向右淡出 */
-}
-
-.track-detail.fade-in {
-  opacity: 1;
-  transform: translateX(0); /* 从右淡入 */
-}
-
-/* 封面图，占 30% 高度 */
+/* ==============================
+   track-cover：封面图
+   ============================== */
 .track-cover {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 30%;        /* 3:7 */
+  height: 30%; /* 3:7 高度比例 */
   overflow: hidden;
 
-  /* 下方渐变透明效果 */
+  /* 底部渐变透明效果 */
   -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
@@ -57,22 +61,23 @@
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
   mask-repeat: no-repeat;
   mask-size: cover;
+
+  a,
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none; /* 默认禁止点击 */
+  }
 }
 
-.track-cover a,
-.track-cover img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-  pointer-events: none; /* 禁止点击 */
-}
-
-/* 内容卡片，占 70% 高度 */
+/* ==============================
+   track-card：内容卡片
+   ============================== */
 .track-card {
   position: absolute;
-  top: 30%;
+  top: 30%;       /* 位于封面下方 */
   left: 0;
   width: 100%;
   height: 70%;
@@ -80,9 +85,12 @@
   box-sizing: border-box;
 
   display: flex;
-  flex-direction: column; /* 垂直排列 */
+  flex-direction: column; /* 垂直排列内容 */
 }
 
+/* ==============================
+   track-info-title：标题
+   ============================== */
 .track-info-title {
   font-size: 1.2rem;
   margin-top: 0 !important;
@@ -90,62 +98,71 @@
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;   /* 一行标题 */
 }
 
+/* ==============================
+   track-info-meta：Meta 信息
+   ============================== */
 .track-info-meta {
   font-size: 0.8rem;
   line-height: 1rem;
   color: #888;
 }
 
+/* ==============================
+   track-info-description：描述
+   ============================== */
 .track-info-description {
   font-size: 0.9rem;
   line-height: 1.2rem;
-  overflow: hidden;  
-  flex: 1 1 auto;       /* 填充剩余空间 */
-  
+  overflow: hidden;
+  flex: 1 1 auto; /* 填充剩余空间 */
+
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 999;  /* 无限行（999行即可） */
+  -webkit-line-clamp: 999; /* 无限行 */
   white-space: normal;
   word-break: break-word;
 }
 
+/* ==============================
+   track-info-readmore：阅读更多按钮
+   ============================== */
 .track-info-readmore {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 80%;
+  height: 2rem; /* 固定高度 */
   padding: 0.5rem 1%;
   margin: 0 10%;
+  margin-top: auto; /* 推到底部 */
   font-size: 1.5rem;
   font-weight: 500;
   background-color: $btn-default-bg;
   border: none;
   border-radius: 4px;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.2s;
 
-  width: 80%;
-  height: 2rem;       /* 固定按钮高度 */
-  margin-top: auto;   /* 推到底部 */
-  text-align: center;
+  &:hover {
+    background-color: $btn-default-hover-bg;
+    transform: translateY(-1px);
+  }
 }
 
-.track-info-readmore:hover {
-  background-color: $btn-default-hover-bg;
-  transform: translateY(-1px);
-}
-
-
+/* ==============================
+   响应式布局
+   ============================== */
 @media (max-width: 768px) {
-  /* 轮盘主体 */
   .track-detail {
     width: 98%;
     height: 28rem;
     right: 1%;
 
+    /* 顶部渐变遮罩 */
     -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
@@ -162,7 +179,7 @@
     left: 1%;
     position: relative;
 
-    /* ===== 上下 + 左右渐变遮罩 ===== */
+    /* 上下 + 左右渐变遮罩 */
     -webkit-mask-image: 
       linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%),
       linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);

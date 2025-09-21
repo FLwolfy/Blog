@@ -1,5 +1,8 @@
+/* ==============================
+   osu-container：整体容器
+   ============================== */
 .osu-container {
-  height: 30rem;   /* 可自行调整 */
+  height: 30rem; /* 可自行调整 */
   width: 100%;
   background: $article-track-container-bg;
   position: relative;
@@ -24,17 +27,21 @@
   mask-composite: intersect;
 }
 
-/* 独立亮白边框 */
+/* ==============================
+   osu-container 边框
+   ============================== */
 .osu-container::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   border: 1rem solid rgba(255,255,255,0.8); /* 亮白色 */
-  pointer-events: none;                     /* 不阻挡交互 */
+  pointer-events: none; /* 不阻挡交互 */
   box-sizing: border-box;
 }
 
-/* 轮盘主体 */
+/* ==============================
+   osu-wheel：轮盘主体
+   ============================== */
 .osu-wheel {
   position: absolute;
   width: 70%;
@@ -42,66 +49,78 @@
   overflow: hidden;
 }
 
-/* 每条 track */
+/* ==============================
+   track：每条音乐条目
+   ============================== */
 .track {
   position: absolute;
   transform-origin: left center; /* 左边缘中间 */
   transition: transform 0.2s, opacity 0.2s;
-  height: 5rem; /* track 默认高度 */
   width: 60%;
+  height: 5rem;
   display: flex;
-  align-items: center;   /* 垂直居中 */
+  align-items: center; /* 垂直居中 */
   justify-content: flex-start; /* 左对齐 */
   overflow: hidden;
   background-color: $article-track-bg;
 
   will-change: transform, opacity;
   backface-visibility: hidden;
+
+  /* 灰色遮罩 */
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* 遮罩不挡交互 */
+    z-index: 5;
+  }
+
+  /* active 状态 */
+  &.active {
+    z-index: 10;
+    box-shadow: 
+      0 0.5rem 1rem rgba(0,0,0,0.12),
+      0 0 1.25rem 0.5rem $color-img-box-shadow-hover-custom;
+
+    /* 去掉遮罩 */
+    &::after {
+      opacity: 0;
+    }
+
+    /* track 内 a 可点击 */
+    a {
+      pointer-events: auto;
+    }
+  }
 }
 
-/* 灰色遮罩（默认半透明） */
-.track::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.25); /* 灰色遮罩 */
-  transition: opacity 0.3s ease;
-  pointer-events: none; /* 遮罩不挡交互 */
-  z-index: 5;
-}
-
-/* 放大 active track */
-.track.active {
-  z-index: 10;
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.12),
-              0 0 1.25rem 0.5rem $color-img-box-shadow-hover-custom;
-}
-
-/* active 时淡去遮罩 */
-.track.active::after {
-  opacity: 0;
-}
-
-/* track 内部内容 */
+/* ==============================
+   track-content：条目内容容器
+   ============================== */
 .track-content {
   display: flex;
-  flex-direction: column;      /* 如果内容竖直排列 */
-  justify-content: center;     /* 垂直居中（主轴） */
-  align-items: center;         /* 水平居中（交叉轴） */
+  flex-direction: column; /* 竖直排列内容 */
+  justify-content: center; /* 垂直居中（主轴） */
+  align-items: center;     /* 水平居中（交叉轴） */
   width: 70%;
   height: 100%;
   box-sizing: border-box;
   overflow: hidden;
 }
 
-/* track 图片 */
+/* ==============================
+   track-image：条目图片
+   ============================== */
 .track-image {
   display: inline-block;
   width: 30%;
   height: 100%;
-  vertical-align: top;
   position: relative;
   overflow: hidden;
+  vertical-align: top;
 
   /* 左侧渐变遮罩 */
   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
@@ -111,34 +130,29 @@
   mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
   mask-repeat: no-repeat;
   mask-size: cover;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* 默认禁止点击 */
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.8s ease;
+  }
 }
 
-.track-image a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* 禁止点击 */
-}
-
-.track-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  transition: transform 0.8s ease;
-}
-
-.track-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* 保留标题的行高/高度 */
+/* ==============================
+   track-title：标题
+   ============================== */
 .track-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.75rem;
   height: 1.75rem;
   margin: 0 !important;
@@ -146,55 +160,61 @@
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
+
+  a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    pointer-events: none; /* 默认不可点击 */
+  }
 }
 
-/* 关键：把 a 变成块级并限制宽度，同时在同一元素上设置省略号 */
-.track-title a {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+/* ==============================
+   track-meta-container：条目 Meta 信息
+   ============================== */
+.track-content .track-meta-container {
+  .post-meta {
+    display: block;
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    span {
+      display: inline;
+    }
+  }
+
+  a {
+    color: $link-color;
+    opacity: 0.4;
+    transition: color 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+      color: $link-hover-color;
+    }
+  }
 }
 
-/* 卡片 Meta */
-.track-content .track-meta-container .post-meta {
-  display: block;
-  font-size: 0.8rem;
-  margin: 0;
-  margin-top: auto;
-  
-  text-align: center;     /* 水平居中 */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.track-content .track-meta-container .post-meta span {
-  display: inline;
-}
-
-.track-content .track-meta-container a {
-  color: $link-color;
-  opacity: 0.4;
-  transition: color 0.3s ease;
-}
-
-.track-content .track-meta-container a:hover {
-  opacity: 1;
-  color: $link-hover-color;
-}
-
+/* ==============================
+   响应式
+   ============================== */
 @media (max-width: 768px) {
   .osu-container {
     height: 50rem;
   }
 
-  /* 轮盘主体 */
   .osu-wheel {
     position: absolute;
     top: 30rem;
     width: 100%;
     height: 20rem;
 
+    /* 顶部渐变遮罩 */
     -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;

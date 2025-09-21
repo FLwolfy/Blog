@@ -1,15 +1,15 @@
 ---
 title: 博客主页
-home: true
+description: 欢迎来到 FLwolfy 的博客，这里分享编程、游戏和生活的点滴。
 categories:
   - 其他
 tags:
   - 主页
-description: 欢迎来到 FLwolfy 的博客，这里分享编程、游戏和生活的点滴。
-date: 2025-06-15
+home: true
 toc_enable: false
 style_enable: false
 cover_img: /images/posts/home-page/HomeCover.jpg
+date: 2025-06-15
 ---
 
 <section class="home-welcome" style="text-align: center; padding: 0 2rem;">

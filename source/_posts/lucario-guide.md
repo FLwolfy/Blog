@@ -1,14 +1,18 @@
 ---
-title: 路卡利欧全方位教程
+title: 路卡利欧全方位教程【更新中...】
+description: 本指南面向《任天堂明星大乱斗—特别版》的路卡利欧玩家，旨在提供角色定位、玩法思路及实战技巧的全方位参考，内容整合自国外教学资料及实战经验，方便玩家查阅与学习。
 categories:
   - 游戏
 tags:
   - SSBU
   - 宝可梦
   - 教程
-date: 2025-06-21
-description: 本指南面向《任天堂明星大乱斗—特别版》的路卡利欧玩家，旨在提供角色定位、玩法思路及实战技巧的全方位参考，内容整合自国外教学资料及实战经验，方便玩家查阅与学习。
+home: false
+toc_enable: true
+style_enable: true
 cover_img: /images/posts/lucario-guide/LucarioGuideCover.jpg
+date: 2025-06-21
+
 ---
 
 # 前言和申明
