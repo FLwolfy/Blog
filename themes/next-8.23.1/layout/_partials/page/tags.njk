@@ -1,4 +1,3 @@
-
 <div class="cats-tags-container">
   {# 分类部分标题 #}
   <div class="category-all-title enhanced-title">
@@ -9,14 +8,16 @@
   {# 分类展示 #}
   <div class="category-collage-categories">
     {%- for category in site.categories.toArray() %}
+      {% set full_category_name = category.path.replace('categories/', '').slice(0, -1) %}
       <a href="{{ url_for(category.path) }}" class="category-collage-card" title="{{ category.name }}">
-        <img src="{{ url_for('/images/core/' + category.name + '.jpg') }}" alt="{{ category.name }}">
-        <div class="category-name">{{ category.name }}</div>
+        <img src="{{ url_for('/images/core/' + full_category_name + '.jpg') }}" alt="{{ full_category_name }}">
+        <div class="category-name">
+          {{ full_category_name }}
+        </div>
       </a>
     {%- endfor %}
   </div>
 </div>
-
 
 <div class="cats-tags-container">
   {# 标签云部分标题 #}
