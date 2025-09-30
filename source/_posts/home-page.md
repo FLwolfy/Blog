@@ -1,10 +1,12 @@
 ---
 title: 博客主页
-description: 欢迎来到 FLwolfy 的博客，这里分享编程、游戏和生活的点滴。
+description: 欢迎来到 FLwolfy 的旧博客模板，这里可以自定义你想要的主页样貌。
+
 categories:
   - 其他
 tags:
   - 主页
+  
 home: true
 toc_enable: false
 style_enable: false
@@ -14,29 +16,9 @@ date: 2025-06-15
 
 <section class="home-welcome" style="text-align: center; padding: 0 2rem;">
   <h1 style="font-size: 2.8rem; font-weight: 900; color: #5FE9CB; margin-bottom: 0.5em; margin-top: 0;">
-    欢迎来到 FLwolfy 的博客
+    欢迎来到 FLwolfy 的旧博客模板
   </h1>
   <p style="font-size: 1.2rem; max-width: 50rem; margin: 0 auto 2.5em; color: #c0b6f2;">
-    我是 FLwolfy，热爱编程、游戏、看番，也喜欢丰富的生活。这里分享我的编程笔记、游戏心得、动漫观后感和一些生活的好玩事儿~
+    这个是当前的主页样式，目前只有这一个主页 Post ，你可以通过添加更多的主页 Post 来让主页随机放出你的主页 Post
   </p>
-  <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; max-width: 60rem; margin: 0 auto;">
-    <div style="flex: 1 1 15rem; background: #2b003d; border-radius: 1rem; padding: 2.2rem; box-shadow: 0 0.4rem 1.5rem rgba(95, 233, 203, 0.4); color: #d6c9ff;">
-      <h2 style="font-size: 1.6rem; margin-bottom: 0.8em; border-bottom: 0.25rem solid #5FE9CB; padding-bottom: 0.6rem;">
-        编程分享
-      </h2>
-      <p>涵盖各语言学习笔记、算法理解、和新颖小赤石技术（不是</p>
-    </div>
-    <div style="flex: 1 1 15rem; background: #2b003d; border-radius: 1rem; padding: 2.2rem; box-shadow: 0 0.4rem 1.5rem rgba(95, 233, 203, 0.4); color: #d6c9ff;">
-      <h2 style="font-size: 1.6rem; margin-bottom: 0.8em; border-bottom: 0.25rem solid #5FE9CB; padding-bottom: 0.6rem;">
-        游戏心得
-      </h2>
-      <p>可能投稿游戏攻略、玩法分析、个人感受分享和一些吐槽</p>
-    </div>
-    <div style="flex: 1 1 15rem; background: #2b003d; border-radius: 1rem; padding: 2.2rem; box-shadow: 0 0.4rem 1.5rem rgba(95, 233, 203, 0.4); color: #d6c9ff;">
-      <h2 style="font-size: 1.6rem; margin-bottom: 0.8em; border-bottom: 0.25rem solid #5FE9CB; padding-bottom: 0.6rem;">
-        动漫评价
-      </h2>
-      <p>喜欢二次元、憧憬二次元、成为二次元！婆罗门二次元萌新不定时发布自己动漫观后感</p>
-    </div>
-  </div>
 </section>

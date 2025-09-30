@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: FLwolfy's Blog
-subtitle: '编程、游戏、动漫爱好者！'
+title: Blog
+subtitle: '这里是副标题～'
 description: ''
 keywords:
 author: FLwolfy
-language: zh-CN
+language: zh-CN # 其他语言没有适配，请移步对应 Languages 设置
 timezone: ''
 
 # URL

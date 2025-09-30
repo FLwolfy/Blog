@@ -27,13 +27,13 @@ jobs:
       - name: Generate static files
         run: npx hexo generate
 
-      - name: Deploy to FLwolfy.github.io
+      - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GH_DEPLOY_TOKEN }}
-          external_repository: FLwolfy/FLwolfy.github.io
+          personal_token: ${{ secrets.GH_DEPLOY_TOKEN }}    # 请替换成你的 GitHub Secret Token 名称
+          external_repository: YourName/YourName.github.io  # 请替换成你的 GitHub Pages 仓库地址
           publish_dir: ./public
           publish_branch: main
           keep_files: false
-          user_name: Hsuan-Kai Liao
-          user_email: hsuankailiao@gmail.com
+          user_name: YourName                  # 请替换成你的 GitHub 用户名            
+          user_email: YourEmail@youremail.com  # 请替换成你的 GitHub 邮箱
